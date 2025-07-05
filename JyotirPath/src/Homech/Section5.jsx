@@ -23,7 +23,7 @@ const Section5 = () => {
           {/* Main Image - Mobile */}
           <div className="flex items-center justify-center p-4 sm:p-6">
             <img
-              src="https://i.pinimg.com/736x/a7/58/1a/a7581af4290f6aef3fed59464cd60dc4.jpg"
+              src="https://images.pexels.com/photos/12428566/pexels-photo-12428566.jpeg"
               alt="Person sketching astrological chart with tarot cards"
               width={600}
               height={700}

@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Check } from "lucide-react"
-import img from '../../RemediesImages/image.png'
+import img from '../../RemediesImages/bgpropink.png'
+
 
 
 const Section5 = () => {
@@ -74,7 +75,7 @@ const [currentStep, setCurrentStep] = useState(1)
        <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: `url('https://i.pinimg.com/736x/56/08/f9/5608f9562502bd0beb2d0ce849306d5a.jpg')`,
+        backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

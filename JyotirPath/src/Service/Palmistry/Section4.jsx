@@ -45,13 +45,13 @@ const Section4 = () => {
             </button>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end ">
             <img
               src={img}
               alt="Astrological moon and stars illustration"
               width={400}
               height={400}
-              className=" max-w-md lg:max-w-lg w-96 h-96 pb-5 pr-5"
+              className=" max-w-sm lg:max-w-lg w-96 h-96 pb-5 pr-5 -translate-x-10 "
               priority
             />
           </div>

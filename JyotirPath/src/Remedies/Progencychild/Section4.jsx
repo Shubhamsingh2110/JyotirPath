@@ -4,28 +4,28 @@ import React from 'react'
 const services = [
   {
     id: 1,
-    title: "Astrological Compatibility",
+    title: "Timings for Garbhdhaan (IVF) Muhurat",
     description: "Compare your synastry and potential couple challenges.",
     image: "https://images.pexels.com/photos/9346141/pexels-photo-9346141.jpeg",
     alt: "Meditation pose with chakra symbols",
   },
   {
     id: 2,
-    title: "Birth Chart Astrology",
+    title: "Child birth concerns",
     description: "Unlock the secrets of your unique birth chart, including your Sun.",
     image: "https://images.pexels.com/photos/2995347/pexels-photo-2995347.jpeg",
     alt: "Astrological birth chart with planetary positions",
   },
   {
     id: 3,
-    title: "Annual Horoscope",
+    title: "Kundali matching & providing remedies",
     description: "Helping you prepare for opportunities and challenges.",
     image: "https://images.pexels.com/photos/5119602/pexels-photo-5119602.jpeg",
     alt: "Tarot cards spread on wooden surface",
   },
   {
     id: 4,
-    title: "Sun Sign Personality",
+    title: "Adoption Muhurat",
     description: "Gain a deeper understanding of your personality traits, strengths.",
     image: "https://images.pexels.com/photos/3901903/pexels-photo-3901903.jpeg",
     alt: "Zodiac wheel with sun symbol in center",

@@ -41,7 +41,7 @@ const Section5 = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[300px]">
           {/* Left side - Illustration */}
           <div className="flex justify-center relative">
-            <div className="relative w-[400px] h-[400px]">
+            <div className="relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
               {/* Second image (base layer) */}
               <img
                 src="https://i.pinimg.com/736x/fb/41/f7/fb41f758d0457b7b65e060ed84f83b78.jpg"
@@ -114,11 +114,11 @@ const Section5 = () => {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 className="flex flex-col items-center space-y-2 group cursor-pointer"
               >
-                <div className="w-16 h-16 lg:w-32 lg:h-32 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-xl transition-shadow duration-200">
+                <div className="w-20 h-20 lg:w-32 lg:h-32 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-xl transition-shadow duration-200">
                   <img
                     src={sign.image}
                     alt={sign.name}
-                    className="w-28 h-28 object-cover rounded-full"
+                    className="w-20 h-20  lg:w-28 lg:h-28  object-cover rounded-full"
                   />
                 </div>
                 <span className="text-sm text-slate-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">
