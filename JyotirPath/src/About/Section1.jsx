@@ -84,12 +84,12 @@ const Section1 = () => {
               </div>
 
               {/* Crescent moon - top left */}
-              <div className="absolute -top-4 -left-10 w-28 h-28 text-[#b69066]">
+              <div className="absolute -top-4 -left-10 lg:-left-10 w-28 h-28 text-[#b69066]">
                 <img src={img1} alt="" />
               </div>
 
               {/* Mars-like planet - top right */}
-              <div className="absolute top-44 -right-20 w-56 h-56">
+              <div className="absolute top-44 right-10 lg:-right-20 w-56 h-56">
                
                   <img src={img} alt="" />
                 
