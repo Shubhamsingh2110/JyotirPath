@@ -12,7 +12,7 @@ const Section2 = () => {
           {/* Left Side - Images */}
           <div className="relative order-2 lg:order-1">
             {/* Main Image */}
-            <div className="relative overflow-hidden h-64 sm:h-80 lg:h-96 xl:h-[400px] w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-[400px] mx-auto lg:mx-0 border border-gray-200 rounded-t-full">
+            <div className="relative overflow-hidden h-64 sm:h-80 lg:h-96 xl:h-[400px] w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-[400px] mx-auto lg:mx-0 border border-gray-200 rounded-t-full my-10">
               <img
                 src="https://i.pinimg.com/736x/00/5f/fc/005ffcd14a1e6210b8440ab1cf66f542.jpg"
                 alt="Mystical tarot cards, crystals, and spiritual symbols arranged on a table"
@@ -22,7 +22,7 @@ const Section2 = () => {
             </div>
 
             {/* Secondary Image - Overlapping */}
-            <div className="absolute -bottom-12 sm:-bottom-16 lg:-bottom-24 right-4 sm:right-8 lg:right-44 w-32 sm:w-48 lg:w-64 xl:w-[350px] h-48 sm:h-72 lg:h-96 xl:h-[700px] hidden sm:block">
+            <div className="absolute bottom-1 md:-bottom-12 lg:-bottom-24 right-14 sm:right-4 md:right-8 lg:right-44 w-56 md:w-48 lg:w-64 xl:w-[350px] h-80 md:h-60 lg:h-96 xl:h-[700px] ">
               <img
                 src={img}
                 alt="Crystal healing stones and spiritual elements"
