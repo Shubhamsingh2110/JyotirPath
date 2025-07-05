@@ -72,7 +72,7 @@ const Section1 = () => {
           <div className="relative flex justify-center">
             {/* Main portrait card */}
             <div className="relative">
-              <div className="w-96 h-96 rounded-xl overflow-hidden bg-gray-800 relative">
+              <div className="lg:w-96 lg:h-96 w-60 h-60 rounded-full overflow-hidden bg-gray-800 relative">
                 <img
                   src="https://i.pinimg.com/736x/f1/37/dc/f137dca5f5cb1126718bc48641458aea.jpg"
                   alt="Augustin James - Professional Astrologer"
