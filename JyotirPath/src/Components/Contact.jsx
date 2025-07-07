@@ -1,3 +1,69 @@
+// use this below code and upload in your google apps script editor
+
+// function doPost(e) {
+//   try {
+//     // Get the active spreadsheet (make sure to create one first)
+//     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    
+//     // If this is the first time, add headers
+//     if (sheet.getLastRow() === 0) {
+//       sheet.getRange(1, 1, 1, 7).setValues([
+//         ['Timestamp', 'Full Name', 'Gender', 'Birth Date', 'Birth Time', 'Birth Location', 'Email']
+//       ]);
+//     }
+    
+//     // Get form data
+//     var formData = e.parameter;
+    
+//     // Prepare data array
+//     var rowData = [
+//       new Date(), // Timestamp
+//       formData.fullName || '',
+//       formData.gender || '',
+//       formData.birthDate || '',
+//       formData.birthTime || '',
+//       formData.birthLocation || '',
+//       formData.email || ''
+//     ];
+    
+//     // Add data to sheet
+//     sheet.appendRow(rowData);
+    
+//     // Return success response
+//     return ContentService
+//       .createTextOutput(JSON.stringify({
+//         status: 'success',
+//         message: 'Data saved successfully'
+//       }))
+//       .setMimeType(ContentService.MimeType.JSON);
+      
+//   } catch (error) {
+//     // Return error response
+//     return ContentService
+//       .createTextOutput(JSON.stringify({
+//         status: 'error',
+//         message: error.toString()
+//       }))
+//       .setMimeType(ContentService.MimeType.JSON);
+//   }
+// }
+
+// function doGet(e) {
+//   // Handle GET requests (optional)
+//   return ContentService
+//     .createTextOutput(JSON.stringify({
+//       status: 'success',
+//       message: 'GET request received'
+//     }))
+//     .setMimeType(ContentService.MimeType.JSON);
+// }
+
+
+
+
+
+
+
 import React, { useState } from "react"
 import { User, Calendar, Clock, MapPin, Mail, ChevronDown } from "lucide-react"
 
@@ -12,15 +78,26 @@ const Contact = () => {
     agreeToTerms: false,
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    // Validate required fields
+    if (!formData.fullName || !formData.email || !formData.birthDate) {
+      alert("Please fill in all required fields (Full Name, Email, Birth Date).")
+      return
+    }
 
     if (!formData.agreeToTerms) {
       alert("Please accept the terms to proceed.")
       return
     }
 
-    const formUrl = "https://script.google.com/macros/s/AKfycby3j17WgOEtD_3pLdTtOgBCxN8pc4d5iVjEyFhTld9UNkO0npz6EgsYBn51uYpgcQwP/exec" // <-- Replace this with your real URL
+    setIsSubmitting(true)
+
+    // Replace this URL with your actual Google Apps Script web app URL
+    const formUrl = "https://script.google.com/macros/s/AKfycbx8GuuuFZ07c5M1yCbl6Aqf5pMYugNHP-uzDQPTZzDRVZLL6m3bV47vHXcTdKduYicu/exec"
 
     const dataToSend = {
       fullName: formData.fullName,
@@ -31,31 +108,36 @@ const Contact = () => {
       email: formData.email
     }
 
-    const queryParams = new URLSearchParams(dataToSend)
-
     try {
       const response = await fetch(formUrl, {
         method: "POST",
-        body: queryParams,
+        mode: 'no-cors', // Important for Google Apps Script
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(dataToSend)
       })
 
-      if (response.ok) {
-        alert("Your birth chart request was submitted successfully!")
-        setFormData({
-          fullName: "",
-          gender: "",
-          birthDate: "",
-          birthTime: "",
-          birthLocation: "",
-          email: "",
-          agreeToTerms: false,
-        })
-      } else {
-        alert("Submission failed. Please try again.")
-      }
+      // Note: With no-cors mode, we can't read the response
+      // but if no error is thrown, we assume success
+      alert("Your birth chart request was submitted successfully! We'll contact you soon.")
+      
+      // Reset form
+      setFormData({
+        fullName: "",
+        gender: "",
+        birthDate: "",
+        birthTime: "",
+        birthLocation: "",
+        email: "",
+        agreeToTerms: false,
+      })
+      
     } catch (error) {
       console.error("Error submitting form:", error)
-      alert("An error occurred. Please try again.")
+      alert("An error occurred while submitting the form. Please try again.")
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -76,10 +158,11 @@ const Contact = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Full Name *"
                 value={formData.fullName}
                 onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                 className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] placeholder:text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors"
+                required
               />
               <User className="absolute right-4 top-1/2 transform -translate-y-1/2 text-amber-400/60 w-5 h-5" />
             </div>
@@ -104,10 +187,11 @@ const Contact = () => {
             <div className="relative">
               <input
                 type="text"
-                placeholder="dd/mm/yyyy"
+                placeholder="dd/mm/yyyy *"
                 value={formData.birthDate}
                 onChange={(e) => setFormData({ ...formData, birthDate: e.target.value })}
                 className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] placeholder:text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors"
+                required
               />
               <Calendar className="absolute right-4 top-1/2 transform -translate-y-1/2 text-amber-400/60 w-5 h-5" />
             </div>
@@ -140,10 +224,11 @@ const Contact = () => {
             <div className="relative">
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder="Email Address *"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] placeholder:text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors"
+                required
               />
               <Mail className="absolute right-4 top-1/2 transform -translate-y-1/2 text-amber-400/60 w-5 h-5" />
             </div>
@@ -169,9 +254,12 @@ const Contact = () => {
           <div className="flex justify-center pt-8">
             <button
               type="submit"
-              className="bg-[#C89B6D] hover:bg-[#C89B6D] text-black font-medium px-12 py-4 text-base tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50"
+              disabled={isSubmitting}
+              className={`bg-[#C89B6D] hover:bg-[#C89B6D] text-black font-medium px-12 py-4 text-base tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50 ${
+                isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
             >
-              ✦ GET YOUR CHART
+              {isSubmitting ? '⏳ SUBMITTING...' : '✦ GET YOUR CHART'}
             </button>
           </div>
         </form>
