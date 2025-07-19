@@ -21,6 +21,7 @@ import {
 } from "react-router-dom";
 import Gemstone from './Solution/Gemstone.jsx'
 import Gharshanti from './Solution/Gharshanti.jsx'
+import ContactForm from './Components/Contactform2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/contact",
+        element: <ContactForm />
       },
     ]
   },
