@@ -73,7 +73,7 @@ const Section1 = () => {
             <div className="flex items-baseline gap-2 mt-2">
               <span className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif text-gray-900">of </span>
               <span className="text-5xl lg:text-7xl xl:text-9xl 2xl:text-9xl font-serif italic text-gray-900">
-                the C<span className='text-white'>osm</span>
+                the Co<span className='text-white'>smos</span>
               </span>
             </div>
           </div>

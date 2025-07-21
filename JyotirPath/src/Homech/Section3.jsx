@@ -36,10 +36,10 @@ const Section3 = () => {
         </h1>
 
         {/* CTA Button */}
-        <button className="group rounded-full relative overflow-hidden border-2 border-white/80 bg-transparent px-8 py-3 text-lg font-light font-cinzel tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-black">
-          <span className="relative z-10">Start Now</span>
+        <a  href="/contact " className="group rounded-full relative overflow-hidden border-2 border-white/80 bg-transparent px-8 py-3 text-lg font-light font-cinzel tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-black">
+          <span className="relative z-10">Contact Us</span>
           <div className="absolute inset-0 bg-white/10 backdrop-blur-sm transition-all duration-300 group-hover:bg-white" />
-        </button>
+        </a>
       </div>
 
       {/* Animated Background Text */}
@@ -94,7 +94,9 @@ const Section3 = () => {
         }
       `}</style>
     </section>
+
     </>
+    
   )
 }
 

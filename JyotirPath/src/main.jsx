@@ -13,8 +13,7 @@ import Education from './Remedies/Education.jsx'
 import Career from './Remedies/Career.jsx'
 import Muhurat from './Remedies/Muhurat.jsx'
 import Progency from './Remedies/Progency.jsx'
-import Male from "./Genderform/Male.jsx";
-import Female from './Genderform/Female.jsx'
+import Genderform from './Genderform/Genderform.jsx'
 import './index.css'
 import App from './App.jsx'
 import {
@@ -99,13 +98,10 @@ const router = createBrowserRouter([
       },
       {
 
-        path: "/maleform",
-        element: <Male />
+        path: "/genderform",
+        element: <Genderform />
       },
-      {
-        path: "/femaleform",
-        element: <Female />
-      },
+
       {
         path: "/contact",
         element: <ContactForm />
