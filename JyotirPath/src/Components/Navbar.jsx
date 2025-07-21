@@ -109,6 +109,13 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ease-out" style={{ backgroundColor: "#C89B6D" }} />
             </button>
 
+            {/* CONTACT */}
+            <button onClick={() => navigate("/contact")} className="hover:text-black flex items-center gap-1 group relative">
+              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+              CONTACT
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ease-out" style={{ backgroundColor: "#C89B6D" }} />
+            </button>
+
             {/* Translate Buttons */}
             <div className="flex gap-2 ml-4">
               <button onClick={() => handleTranslate("hi")} className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm">हिंदी</button>
@@ -148,6 +155,7 @@ const Navbar = () => {
               <button onClick={() => handleNavigate("/solution/gharshanti")} className="block">Ghar Shanti Pooja</button>
             </div>
             <button onClick={() => handleNavigate("/about")} className="block">ABOUT US</button>
+            <button onClick={() => handleNavigate("/contact")} className="block">CONTACT</button>
 
             {/* Mobile Translate Buttons */}
             <div className="flex gap-2 mt-4">

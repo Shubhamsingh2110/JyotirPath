@@ -13,7 +13,7 @@ import Education from './Remedies/Education.jsx'
 import Career from './Remedies/Career.jsx'
 import Muhurat from './Remedies/Muhurat.jsx'
 import Progency from './Remedies/Progency.jsx'
-import Male from './Genderform/Male.jsx'
+import Male from './Genderform/male.jsx'
 import Female from './Genderform/Female.jsx'
 import './index.css'
 import App from './App.jsx'
@@ -23,6 +23,7 @@ import {
 } from "react-router-dom";
 import Gemstone from './Solution/Gemstone.jsx'
 import Gharshanti from './Solution/Gharshanti.jsx'
+import ContactForm from './Components/Contactform2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -97,12 +98,17 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
+<<<<<<< HEAD
         path: "/maleform",
         element: <Male />
       },
       {
         path: "/femaleform",
         element: <Female />
+=======
+        path: "/contact",
+        element: <ContactForm />
+>>>>>>> e5bc3ad22e54f233a914c0bad40b043ec278c36a
       },
     ]
   },
