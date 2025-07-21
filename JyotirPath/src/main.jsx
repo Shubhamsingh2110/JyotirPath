@@ -98,17 +98,18 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
-<<<<<<< HEAD
+
         path: "/maleform",
         element: <Male />
       },
       {
         path: "/femaleform",
         element: <Female />
-=======
+      },
+      {
         path: "/contact",
         element: <ContactForm />
->>>>>>> e5bc3ad22e54f233a914c0bad40b043ec278c36a
+
       },
     ]
   },
