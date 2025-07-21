@@ -23,12 +23,6 @@ const Section6 = () => {
             </p>
           </div>
 
-          <button className="inline-flex items-center gap-3 bg-black text-white px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:bg-gray-900 hover:shadow-lg group w-fit mx-auto lg:mx-0">
-            <span className="text-base md:text-lg" style={{ color: "#C89B6D" }}>
-              ✦
-            </span>
-            <span>SCHEDULE SESSION</span>
-          </button>
         </div>
 
         {/* Right Image */}
@@ -41,7 +35,7 @@ const Section6 = () => {
           {/* Main image container */}
           <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[500px]">
             <img
-              src="https://i.pinimg.com/1200x/7e/88/8f/7e888ff3f2e6042e98ed7fd4232cb2fa.jpg"
+              src="https://i.pinimg.com/736x/2e/94/10/2e94109a44c74ea86b84744fbc28eefd.jpg"
               alt="Magali Willms - Professional portrait"
               className="w-full h-[250px] sm:h-[280px] md:h-[320px] lg:h-[350px] object-cover object-center"
             />

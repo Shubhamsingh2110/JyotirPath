@@ -94,15 +94,7 @@ export default function CompatibilityPage() {
           <p className="text-base font-cinzel sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 lg:mb-12 max-w-2xl mx-auto px-2">
             {slides[currentSlide].subtitle}
           </p>
-
-          {/* CTA Button */}
-          <button
-            onClick={() => setShowQuiz(true)}
-            className="bg-white text-gray-800 hover:bg-gray-100 px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-base sm:text-base lg:text-base font-medium tracking-wide transition-all duration-500 flex items-center justify-center mx-auto mb-8 sm:mb-12 lg:mb-16 rounded-full"
-          >
-            <img src={imgstar} className="w-4 h-4 sm:w-5 sm:h-5 mr-2 hover:animate-spin " />
-            CHECK COMPATIBILITY
-          </button>        
+      
         </div>
       </div>
     </div>

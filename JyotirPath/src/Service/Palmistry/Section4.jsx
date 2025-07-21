@@ -24,25 +24,7 @@ const Section4 = () => {
               culture as way to make things mean things.
             </p>
 
-             <button className="group hover:-translate-y-1 transition-all duration-300 bg-transparent border-none p-2 cursor-pointer">
-              <div className="flex items-center space-x-2">
-                <span 
-                  className="text-yellow-500 text-lg group-hover:rotate-180 transition-transform duration-300" 
-                  style={{ color: "#C89B6D" }}
-                >
-                  ✦
-                </span>
-                <span
-                  className="text-white text-sm font-medium tracking-wider relative transition-all duration-300"
-                >
-                  LEARN MORE
-                  <span
-                    className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300 ease-out"
-                    style={{ backgroundColor: "#C89B6D" }}
-                  ></span>
-                </span>
-              </div>
-            </button>
+             
           </div>
 
           <div className="flex justify-center lg:justify-end ">

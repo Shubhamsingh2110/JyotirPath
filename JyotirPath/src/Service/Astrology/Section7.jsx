@@ -56,14 +56,6 @@ const Section7 = () => {
     </li>
   </ul>
 </div>
-
-
-            <button className="inline-flex items-center gap-3 bg-black text-white px-8 py-4 text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:bg-gray-900 hover:shadow-lg group w-fit">
-              <span className="text-lg" style={{ color: "#C89B6D" }}>
-                ✦
-              </span>
-              <span>LEARN MORE</span>
-            </button>
           </div>
         </div>
       </div>

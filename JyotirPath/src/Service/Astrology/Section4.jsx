@@ -26,12 +26,6 @@ const Section4 = () => {
       ? LEARN TODAY!
     </h1>
 
-    <button className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-sm font-medium tracking-wider uppercase hover:shadow-lg group w-fit">
-      <span className="text-lg" style={{ color: "#C89B6D" }}>
-        ✦
-      </span>
-      <span>LEARN MORE</span>
-    </button>
   </div>
 </div>
 

@@ -26,14 +26,6 @@ const Section2 = () => {
                 Our numerological analysis provides practical guidance for making important decisions, understanding your natural talents, and choosing the most auspicious timing for significant life events.
               </p>
             </div>
-
-            <button className="relative text-amber-900 hover:text-amber-800 p-0 h-auto font-medium tracking-wide flex items-center bg-transparent border-none cursor-pointer transition-colors group">
-              <Star className="w-4 h-4 mr-2 fill-current transition-transform duration-300 group-hover:rotate-180" />
-              <span className="relative">
-                LEARN MORE
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-900 transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            </button>
           </div>
         </div>
       </div>

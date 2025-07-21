@@ -29,14 +29,6 @@ const Section1 = () => {
                 <p>Numerology is the ancient metaphysical science that reveals the mystical relationship between numbers and life events. Based on the belief that numbers carry vibrational energy, numerology can provide profound insights into your personality, destiny, and life purpose.</p>
                 <p>By analyzing the numbers derived from your birth date and name, we can uncover your life path number, destiny number, soul urge number, and other significant numerical influences that shape your journey through life.</p>
               </div>
-
-              <button className="relative text-amber-900 hover:text-amber-800 p-0 h-auto font-medium tracking-wide flex items-center bg-transparent border-none cursor-pointer transition-colors group">
-              <Star className="w-4 h-4 mr-2 fill-current transition-transform duration-300 group-hover:rotate-180" />
-              <span className="relative">
-                GET STARTED
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-900 transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            </button>
             </div>
 
             {/* Features */}

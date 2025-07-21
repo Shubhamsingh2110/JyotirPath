@@ -32,23 +32,6 @@ const Section1 = () => {
               </div>
             </div>
 
-            <button className="group hover:-translate-y-1 transition-all duration-300 bg-transparent border-none p-2 cursor-pointer mx-auto lg:mx-0 block">
-              <div className="flex items-center space-x-2">
-                <span
-                  className="text-yellow-500 text-lg group-hover:rotate-180 transition-transform duration-300"
-                  style={{ color: "#C89B6D" }}
-                >
-                  ✦
-                </span>
-                <span className="text-black text-sm font-medium tracking-wider relative transition-all duration-300">
-                  LEARN MORE
-                  <span
-                    className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-500 group-hover:w-full transition-all duration-300 ease-out"
-                    style={{ backgroundColor: "#C89B6D" }}
-                  ></span>
-                </span>
-              </div>
-            </button>
           </div>
 
           {/* Right content - Astrology Chart */}

@@ -20,13 +20,6 @@ const Section2 = () => {
             <h2 className="text-2xl md:text-3xl font-cinzel font-light text-amber-900 tracking-wide">
               Expert Astrologers
             </h2>
-            <button className="relative text-amber-900 hover:text-amber-800 p-0 h-auto font-medium tracking-wide flex items-center bg-transparent border-none cursor-pointer transition-colors group">
-              <Star className="w-4 h-4 mr-2 fill-current transition-transform duration-300 group-hover:rotate-180" />
-              <span className="relative">
-                LEARN MORE
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-900 transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            </button>
           </div>
         </div>
 
@@ -42,13 +35,6 @@ const Section2 = () => {
               <br />
              Predictions
             </h2>
-            <button className="relative text-amber-900 hover:text-amber-800 p-0 h-auto font-medium tracking-wide flex items-center bg-transparent border-none cursor-pointer transition-colors group">
-              <Star className="w-4 h-4 mr-2 fill-current transition-transform duration-300 group-hover:rotate-180" />
-              <span className="relative">
-                LEARN MORE
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-900 transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            </button>
           </div>
         </div>
 
@@ -69,13 +55,6 @@ const Section2 = () => {
               <br />
               Guidance
             </h2>
-            <button className="relative text-amber-900 hover:text-amber-800 p-0 h-auto font-medium tracking-wide flex items-center bg-transparent border-none cursor-pointer transition-colors group">
-              <Star className="w-4 h-4 mr-2 fill-current transition-transform duration-300 group-hover:rotate-180" />
-              <span className="relative">
-                LEARN MORE
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-900 transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            </button>
           </div>
         </div>
       </div>
