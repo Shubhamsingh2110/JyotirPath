@@ -65,7 +65,7 @@
 
 
 import React, { useState } from "react"
-import { User, Calendar, Clock, MapPin, Mail, ChevronDown } from "lucide-react"
+import { User, Calendar, Clock, MapPin, Mail, ChevronDown,Phone } from "lucide-react"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -145,7 +145,7 @@ const Contact = () => {
     <div className="min-h-screen bg-white border-t-[0.2px] relative overflow-hidden flex items-center justify-center p-4 border-b-[0.2px] border-[#C89B6D]">
       <div className="w-full max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-light text-[#C89B6D] font-cinzel tracking-wider leading-tight">
+          <h1 className="text-4xl md:text-5xl font-light text-[#C89B6D] font-serif tracking-wider leading-tight">
             RECEIVE YOUR FREE
             <br />
             BIRTH CHART GUIDE
@@ -172,7 +172,7 @@ const Contact = () => {
               <select
                 value={formData.gender}
                 onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
-                className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors"
+                className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors appearance-none"
               >
                 <option value="">Gender</option>
                 <option value="male">Male</option>
@@ -220,6 +220,18 @@ const Contact = () => {
               <MapPin className="absolute right-4 top-1/2 transform -translate-y-1/2 text-amber-400/60 w-5 h-5" />
             </div>
 
+            {/* Contact Number */}
+            <div className="relative">
+              <input
+                type="tel"
+                placeholder="Contact Number"
+                value={formData.contactNumber}
+                onChange={(e) => setFormData({ ...formData, contactNumber: e.target.value })}
+                className="w-full bg-transparent border border-[#C89B6D] text-[#C89B6D] placeholder:text-[#C89B6D] h-14 pl-4 pr-12 focus:ring-2 focus:ring-[#C89B6D] focus:outline-none transition-colors"
+              />
+              <Phone className="absolute right-4 top-1/2 transform -translate-y-1/2 text-amber-400/60 w-5 h-5" />
+            </div>
+
             {/* Email */}
             <div className="relative">
               <input
@@ -245,7 +257,7 @@ const Contact = () => {
                 className="w-5 h-5 border border-[#C89B6D] text-[#C89B6D] focus:ring-[#C89B6D] mt-1"
               />
             </div>
-            <label htmlFor="terms" className="text-[#C89B6D] font-cinzel text-base leading-relaxed cursor-pointer">
+            <label htmlFor="terms" className="text-[#C89B6D] font-serif text-base leading-relaxed cursor-pointer">
               By accepting you agree to our Terms of Service and Privacy Policy.
             </label>
           </div>
@@ -255,11 +267,11 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-[#C89B6D] hover:bg-[#C89B6D] text-black font-medium px-12 py-4 text-base tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50 ${
-                isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+              className={`bg-[#C89B6D] hover:bg-[#B8895E] text-black font-medium px-12 py-4 text-base tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500/50 ${
+                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
-              {isSubmitting ? '⏳ SUBMITTING...' : '✦ GET YOUR CHART'}
+              {isSubmitting ? "⏳ SUBMITTING..." : "✦ GET YOUR CHART"}
             </button>
           </div>
         </form>

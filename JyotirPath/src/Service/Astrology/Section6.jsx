@@ -33,24 +33,24 @@ const Section6 = () => {
 
         {/* Right Image */}
         <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
-          {/* Decorative rotating element - hidden on mobile, visible on larger screens */}
+          {/* Decorative rotating element - hidden on mobile, visible on larger screens 
           <div className="absolute -top-10 md:-top-16 lg:-top-20 right-2 md:-right-20 w-32 h-32 md:w-48 md:h-48 lg:w-60 lg:h-60 rounded-full opacity-80 md:opacity-100 animate-spin-slow hidden sm:block">
             <img src={img1} alt="" />
-          </div>
+          </div> */}
 
           {/* Main image container */}
           <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[500px]">
             <img
-              src="https://i.pinimg.com/736x/03/e7/72/03e772a45e04ae6c5a83924ca957d51c.jpg"
+              src="https://i.pinimg.com/1200x/7e/88/8f/7e888ff3f2e6042e98ed7fd4232cb2fa.jpg"
               alt="Magali Willms - Professional portrait"
               className="w-full h-[250px] sm:h-[280px] md:h-[320px] lg:h-[350px] object-cover object-center"
             />
           </div>
 
-          {/* Additional decorative element - adjusted for mobile */}
+          {/* Additional decorative element - adjusted for mobile 
           <div className="absolute -bottom-6 md:-bottom-8 lg:-bottom-12 -left-8 md:-left-12 lg:-left-5 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-full opacity-60 md:opacity-100 hidden sm:block">
             <img src={img} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
