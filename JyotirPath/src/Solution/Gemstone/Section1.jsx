@@ -117,34 +117,6 @@ const products = [
     image: "https://i.pinimg.com/736x/2a/f9/94/2af994387190bf5e3d1443b0b8950f5b.jpg",
     alt: "Natal astrology wheel over sea background",
   },
-  {
-    id: 17,
-    name: "Blue Pearl",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
-    image: "https://i.pinimg.com/736x/49/b6/1d/49b61d121a3f8eeb18ad8d397b47de58.jpg",
-    alt: "Natal astrology wheel over sea background",
-  },
-  {
-    id: 18,
-    name: "Blue Pearl",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
-    image: "https://i.pinimg.com/736x/e5/02/ed/e502edf8d73aec980d895a1f52370bf4.jpg",
-    alt: "Natal astrology wheel over sea background",
-  },
-  {
-    id: 19,
-    name: "Blue Pearl",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
-    image: "https://i.pinimg.com/736x/85/2e/e7/852ee73110d82825dd00c41fca6da052.jpg",
-    alt: "Natal astrology wheel over sea background",
-  },
-  {
-    id: 20,
-    name: "Blue Pearl",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
-    image: "https://i.pinimg.com/736x/e3/40/9d/e3409d04b1272e843584db3238c52189.jpg",
-    alt: "Natal astrology wheel over sea background",
-  }
 
 ];
 
