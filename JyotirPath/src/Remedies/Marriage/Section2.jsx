@@ -1,5 +1,6 @@
 import React from 'react'
 import { ChevronRight } from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -72,9 +73,9 @@ const Section2 = () => {
 
             {/* CTA Button */}
             <div className="pt-2 lg:pt-0">
-              <a href='/contact' className="bg-white text-black px-6 sm:px-8 py-2.5 sm:py-3 font-medium border-2 border-gray-200 text-base sm:text-lg hover:bg-gray-50 transition-colors w-full sm:w-auto">
+              <Link to="/contact" className="bg-white text-black px-6 sm:px-8 py-2.5 sm:py-3 font-medium border-2 border-gray-200 text-base sm:text-lg hover:bg-gray-50 transition-colors w-full sm:w-auto">
                 MORE INFO
-              </a>
+              </Link>
             </div>
           </div>
         </div>

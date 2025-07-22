@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -43,13 +44,13 @@ const Section4 = () => {
         {services.map((service) => (
           <div key={service.id} className="flex flex-col md:flex-row h-[400px]">
             {/* Image Section */}
-            <a href="/genderform" className="flex-1 relative overflow-hidden cursor-pointer block">
+            <Link to="/genderform" className="flex-1 relative overflow-hidden cursor-pointer block">
               <img
                 src={service.image}
                 alt={service.alt}
                 className="object-cover hover:scale-105 transition-transform duration-500 w-full h-full"
               />
-            </a>
+            </Link>
 
             {/* Info Section */}
             <div className="flex-1 bg-black flex items-center justify-center p-8">

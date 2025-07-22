@@ -1,6 +1,7 @@
 import React from 'react'
 import { ChevronRight } from "lucide-react"
 import img from '../../Images/image copy.png'
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -81,9 +82,9 @@ const Section2 = () => {
 
             {/* CTA Button */}
             <div className="pt-2 lg:pt-0">
-              <a href='/contact' className="w-full sm:w-auto bg-white text-black px-6 sm:px-8 py-3 font-medium border-2 border-blue-400 text-base sm:text-lg hover:bg-blue-50 transition-colors">
+              <Link to="/contact" className="w-full sm:w-auto bg-white text-black px-6 sm:px-8 py-3 font-medium border-2 border-blue-400 text-base sm:text-lg hover:bg-blue-50 transition-colors">
                 MORE INFO
-              </a>
+              </Link>
             </div>
           </div>
         </div>
