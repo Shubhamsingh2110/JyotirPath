@@ -81,9 +81,9 @@ const Section2 = () => {
 
             {/* CTA Button */}
             <div className="pt-2 lg:pt-0">
-              <button className="w-full sm:w-auto bg-white text-black px-6 sm:px-8 py-3 font-medium border-2 border-blue-400 text-base sm:text-lg hover:bg-blue-50 transition-colors">
+              <a href='/contact' className="w-full sm:w-auto bg-white text-black px-6 sm:px-8 py-3 font-medium border-2 border-blue-400 text-base sm:text-lg hover:bg-blue-50 transition-colors">
                 MORE INFO
-              </button>
+              </a>
             </div>
           </div>
         </div>

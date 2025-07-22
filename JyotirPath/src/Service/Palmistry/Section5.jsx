@@ -72,7 +72,7 @@ const Section5 = () => {
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
             Our expert palmists combine traditional techniques with modern psychological understanding to provide you with accurate, insightful readings that can guide your decisions and illuminate your path forward.
               </p>
-              <button className="group hover:-translate-y-1 transition-all duration-300 bg-transparent border-none p-2 cursor-pointer">
+              <a href='/contact' className="group hover:-translate-y-1 transition-all duration-300 bg-transparent border-none p-2 cursor-pointer">
               <div className="flex items-center space-x-2">
                 <span 
                   className="text-yellow-500 text-lg group-hover:rotate-180 transition-transform duration-300" 
@@ -90,7 +90,7 @@ const Section5 = () => {
                   ></span>
                 </span>
               </div>
-            </button>
+            </a >
             </div>
           </div>
         </div>
