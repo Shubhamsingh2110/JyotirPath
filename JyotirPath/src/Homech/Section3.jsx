@@ -1,6 +1,7 @@
 import React from 'react'
 import img from '../Images/image copy 3.png'
 import video from '../video/gangaarti video.mp4'
+import { Link } from "react-router-dom";
 
 const Section3 = () => {
   return (
@@ -36,10 +37,10 @@ const Section3 = () => {
         </h1>
 
         {/* CTA Button */}
-        <a  href="/contact " className="group rounded-full relative overflow-hidden border-2 border-white/80 bg-transparent px-8 py-3 text-lg font-light font-cinzel tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-black">
+        <Link  to="/contact" className="group rounded-full relative overflow-hidden border-2 border-white/80 bg-transparent px-8 py-3 text-lg font-light font-cinzel tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-black">
           <span className="relative z-10">Contact Us</span>
           <div className="absolute inset-0 bg-white/10 backdrop-blur-sm transition-all duration-300 group-hover:bg-white" />
-        </a>
+        </Link>
       </div>
 
       {/* Animated Background Text */}
