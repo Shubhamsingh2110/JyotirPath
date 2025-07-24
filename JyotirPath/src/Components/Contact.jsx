@@ -7,8 +7,8 @@
     
 //     // If this is the first time, add headers
 //     if (sheet.getLastRow() === 0) {
-//       sheet.getRange(1, 1, 1, 7).setValues([
-//         ['Timestamp', 'Full Name', 'Gender', 'Birth Date', 'Birth Time', 'Birth Location', 'Email']
+//       sheet.getRange(1, 1, 1, 8).setValues([
+//         ['Timestamp', 'Full Name', 'Gender', 'Birth Date', 'Birth Time', 'Birth Location', 'Contact Number', 'Email']
 //       ]);
 //     }
     
@@ -23,6 +23,7 @@
 //       formData.birthDate || '',
 //       formData.birthTime || '',
 //       formData.birthLocation || '',
+//       formData.contactNumber || '', // Added contact number
 //       formData.email || ''
 //     ];
     
@@ -74,6 +75,7 @@ const Contact = () => {
     birthDate: "",
     birthTime: "",
     birthLocation: "",
+    contactNumber: "",
     email: "",
     agreeToTerms: false,
   })
@@ -97,7 +99,7 @@ const Contact = () => {
     setIsSubmitting(true)
 
     // Replace this URL with your actual Google Apps Script web app URL
-    const formUrl = "https://script.google.com/macros/s/AKfycbx8GuuuFZ07c5M1yCbl6Aqf5pMYugNHP-uzDQPTZzDRVZLL6m3bV47vHXcTdKduYicu/exec"
+    const formUrl = "https://script.google.com/macros/s/AKfycbyWWjezerrrC0xQPU2WcK77xAEAwDuDbvETHFjmACzXA8j3KJXfBfdNSTyNvPy7lW9o/exec"
 
     const dataToSend = {
       fullName: formData.fullName,
@@ -105,6 +107,7 @@ const Contact = () => {
       birthDate: formData.birthDate,
       birthTime: formData.birthTime,
       birthLocation: formData.birthLocation,
+      contactNumber: formData.contactNumber,
       email: formData.email
     }
 
@@ -129,6 +132,7 @@ const Contact = () => {
         birthDate: "",
         birthTime: "",
         birthLocation: "",
+        contactNumber: "",
         email: "",
         agreeToTerms: false,
       })
