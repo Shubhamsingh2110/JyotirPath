@@ -1,14 +1,14 @@
+
 import { useState } from "react"
-import { User, Mail, Phone, MessageSquare, ChevronDown, Users } from "lucide-react"
+import { User, Users, MapPin, Clock, Calendar } from "lucide-react"
 
 export default function Component() {
   const [formData, setFormData] = useState({
     fullName: "",
-    email: "",
-    phone: "",
     gender: "",
-    subject: "",
-    message: "",
+    dateOfBirth: "",
+    placeOfBirth: "",
+    timeOfBirth: "",
     agreeToTerms: false,
   })
 
@@ -16,10 +16,19 @@ export default function Component() {
 
   const handleInputChange = (e) => {
     const { name, value, type } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? e.target.checked : value,
-    }))
+
+    if (type === "checkbox") {
+      const checked = e.target.checked
+      setFormData((prev) => ({
+        ...prev,
+        [name]: checked,
+      }))
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }))
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -32,16 +41,8 @@ export default function Component() {
     console.log("Form submitted:", formData)
     setIsSubmitting(false)
 
-    // Reset form after successful submission
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      gender: "",
-      subject: "",
-      message: "",
-      agreeToTerms: false,
-    })
+    // Reset form or show success message
+    alert("Form submitted successfully!")
   }
 
   return (
@@ -72,33 +73,7 @@ export default function Component() {
               />
               <User className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-[#C89B6D]" />
             </div>
-            <div className="relative">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="w-full h-14 pl-4 pr-12 border border-amber-300 rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white"
-                required
-              />
-              <Mail className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-[#C89B6D]" />
-            </div>
-          </div>
 
-          {/* Second Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="relative">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleInputChange}
-                className="w-full h-14 pl-4 pr-12 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white"
-              />
-              <Phone className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600" />
-            </div>
             <div className="relative">
               <select
                 name="gender"
@@ -117,38 +92,47 @@ export default function Component() {
             </div>
           </div>
 
-          {/* Third Row - Subject */}
-          <div className="relative">
-            <select
-              name="subject"
-              value={formData.subject}
-              onChange={handleInputChange}
-              className="w-full h-14 pl-4 pr-12 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 text-amber-700 bg-white appearance-none"
-              required
-            >
-              <option value="" className="text-amber-600">
-                Subject
-              </option>
-              <option value="marriage-muhurat">Marriage Muhurat</option>
-              <option value="kundali-matching">Kundali Matching</option>
-              <option value="love-marriage">Love Marriage Consultation</option>
-              <option value="doshas-remedies">Doshas & Remedies</option>
-            </select>
-            <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600 pointer-events-none" />
+          {/* Second Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="relative">
+              <input
+                type=""
+                name="dateOfBirth"
+                placeholder="Date of Birth"
+                value={formData.dateOfBirth}
+                onChange={handleInputChange}
+                className="w-full h-14 pl-4 pr-12 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white"
+                required
+              />
+              <Calendar className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600" />
+            </div>
+
+            <div className="relative">
+              <input
+                type=""
+                name="timeOfBirth"
+                placeholder="Time of Birth"
+                value={formData.timeOfBirth}
+                onChange={handleInputChange}
+                className="w-full h-14 pl-4 pr-12 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white"
+                required
+              />
+              <Clock className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600" />
+            </div>
           </div>
 
-          {/* Message Field */}
+          {/* Third Row - Place of Birth */}
           <div className="relative">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
+            <input
+              type="text"
+              name="placeOfBirth"
+              placeholder="Place of Birth"
+              value={formData.placeOfBirth}
               onChange={handleInputChange}
-              rows={4}
-              className="w-full pl-4 pr-12 pt-4 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white resize-none"
+              className="w-full h-14 pl-4 pr-12 border border-[#C89B6D] rounded-md focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200 placeholder:text-amber-600 text-amber-700 bg-white"
               required
             />
-            <MessageSquare className="absolute right-4 top-4 h-5 w-5 text-amber-600" />
+            <MapPin className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600" />
           </div>
 
           {/* Terms Checkbox */}

@@ -4,7 +4,7 @@ import Section2 from '../Service/Palmistry/Section2'
 import Section3 from '../Service/Palmistry/Section3'
 import Section4 from '../Service/Palmistry/Section4'
 import Section5 from '../Service/Palmistry/Section5'
-import Contact from '../Components/Contact'
+import Palmistryform from '../Genderform/Palmistryform'
 
 const Palmistry = () => {
   return (
@@ -14,7 +14,8 @@ const Palmistry = () => {
    <Section3/>
    <Section4/>
    <Section5/>
-   <Contact/>
+   <Palmistryform/>
+   
    </>
   )
 }
