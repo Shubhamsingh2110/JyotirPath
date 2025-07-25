@@ -31,9 +31,7 @@ const Section3 = () => {
         <h1
           className=" font-cinzel mb-12 max-w-4xl text-4xl font-light leading-tight tracking-wide md:text-5xl lg:text-6xl"
         >
-          Revealing Your Future,
-          <br />
-          One Card at a Time
+          Vedic Insights for a Divine Tomorrow
         </h1>
 
         {/* CTA Button */}

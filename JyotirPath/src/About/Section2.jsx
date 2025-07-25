@@ -1,28 +1,30 @@
 import React from 'react'
 
  const testimonials = [
-    {
-      name: "Ancient Wisdom",
-      role: "Singer",
-      quote:
-        "I came to consultation, because I was puzzled with current life situation and Stargaze gave me clear ways to develop.",
-      image: "https://i.pinimg.com/736x/3b/48/c9/3b48c964d42cfef75b89d1141dfbd66c.jpg",
-    },
-    {
-      name: "Compassionate Service",
-      role: "Manager",
-      quote:
-        "I came to consultation, because I was puzzled with current life situation and Stargaze gave me clear ways to develop.",
-      image: "https://i.pinimg.com/736x/3d/63/49/3d6349a3322e03dad458026b6d15ae5b.jpg",
-    },
-    {
-      name: "Proven Results",
-      role: "Designer",
-      quote:
-        "I came to consultation, because I was puzzled with current life situation and Stargaze gave me clear ways to develop.",
-      image: "https://i.pinimg.com/736x/c8/5c/95/c85c9528c1baea321c8ce4339a1e59a6.jpg",
-    },
-  ]
+  {
+    name: "Ancient Wisdom",
+    role: "Vedic Astrology Expert",
+    quote:
+      "With over 20 years of experience, I help individuals uncover hidden energies through traditional Vedic methods to bring clarity and peace in their lives.",
+    image: "https://sohinisastri.com/wp-content/uploads/2024/03/home-cover-subject-main.webp",
+  },
+  {
+    name: "Compassionate Service",
+    role: "Spiritual Healer & Astrologer",
+    quote:
+      "I combine astrology with intuitive healing to guide people through emotional, career, and relationship transitions with compassion and accuracy.",
+    image: "https://www.astrospring.com/images/content/about/astro_img1.jpg",
+  },
+  {
+    name: "Proven Results",
+    role: "Modern Astrologer & Life Coach",
+    quote:
+      "My approach blends ancient wisdom with modern tools, offering practical and transformative insights to help clients make confident life decisions.",
+    image: "https://www.kpjyotish.com/Abhay_Godse.jpg",
+  },
+];
+
+
 
 const Section2 = () => {
   return (

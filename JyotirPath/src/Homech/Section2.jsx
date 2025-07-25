@@ -51,19 +51,8 @@ const Section2 = () => {
           {/* Mobile Statistics */}
           <div className="grid grid-cols-2 gap-8 mt-8">
             <div className="text-center space-y-2">
-              <div className="border-t border-dotted border-gray-400 pt-4"></div>
-              <div className="text-3xl font-light text-gray-900 font-serif">
-                346<span className="text-xl ml-1">+</span>
-              </div>
-              <p className="text-sm text-gray-600 font-light">Tarot Readings</p>
             </div>
-            <div className="text-center space-y-2">
-              <div className="border-t border-dotted border-gray-400 pt-4"></div>
-              <div className="text-3xl font-light text-gray-900 font-serif">
-                750<span className="text-xl ml-1">+</span>
-              </div>
-              <p className="text-sm text-gray-600 font-light">Reading the Future</p>
-            </div>
+             
           </div>
         </div>
 
@@ -77,19 +66,14 @@ const Section2 = () => {
                 alt="Hand drawing tarot cards over an astrological chart"
                 width={400}
                 height={400}
-                className="w-full h-72 lg:h-96 rounded-r-[150px] lg:rounded-r-[250px] object-cover transform translate-y-4 lg:translate-y-10"
+                className="w-full h-72 lg:h-[700px] rounded-[120px] lg:rounded-[200px] object-cover transform translate-y-4 lg:translate-y-10"
               />
             </div>
 
             {/* Statistics under first image */}
             <div className="w-full space-y-4 lg:space-y-6 text-center transform translate-y-8 lg:translate-y-40">
               <div className="space-y-3 lg:space-y-4">
-                <div className="border-t border-dotted border-gray-400 pt-4 lg:pt-6"></div>
-                <div className="text-3xl lg:text-4xl xl:text-5xl font-light text-gray-900 font-serif">
-                  346<span className="text-xl lg:text-2xl xl:text-3xl ml-2">+</span>
-                </div>
-                <p className="text-sm lg:text-base text-gray-600 font-light">Tarot Readings</p>
-              </div>
+               </div>
             </div>
           </div>
 
@@ -112,13 +96,7 @@ const Section2 = () => {
             </p>
 
             {/* Second Statistic */}
-            <div className="space-y-3 lg:space-y-4 pt-6 lg:pt-8 text-center transform translate-y-16 lg:translate-y-28">
-              <div className="border-t border-dotted border-gray-400 pt-4 lg:pt-6"></div>
-              <div className="text-3xl lg:text-4xl xl:text-5xl font-light text-gray-900 font-serif">
-                750<span className="text-xl lg:text-2xl xl:text-3xl ml-2">+</span>
-              </div>
-              <p className="text-sm lg:text-base text-gray-600 font-light">Reading the Future</p>
-            </div>
+            <div className="space-y-3 lg:space-y-4 pt-6 lg:pt-8 text-center transform translate-y-16 lg:translate-y-28"></div>
           </div>
 
           {/* Right Column - Crystal Ball Image */}
@@ -129,7 +107,7 @@ const Section2 = () => {
                 alt="Woman's hand on crystal ball"
                 width={350}
                 height={350}
-                className="w-full h-64 lg:h-80 xl:h-auto rounded-tl-[120px] lg:rounded-tl-[200px] object-cover transform translate-y-16 lg:-translate-y-10"
+                className="w-full h-64 lg:h-80 xl:h-auto rounded-[120px] lg:rounded-[200px] object-cover transform translate-y-16 lg:-translate-y-10"
               />
 
               {/* Mary Sunnibol signature */}

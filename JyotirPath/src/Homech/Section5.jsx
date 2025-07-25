@@ -132,7 +132,7 @@ const Section5 = () => {
                       <path d="M10 16h4" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-serif text-gray-900">Mediumship</h3>
+                  <h3 className="text-lg font-serif text-gray-900">Astrology</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     Experience the healing and comfort of connecting with departed loved ones through the art of
                     Mediumship. Our skilled medium acts as a bridge.

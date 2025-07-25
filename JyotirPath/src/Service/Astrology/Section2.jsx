@@ -9,7 +9,7 @@ const Section2 = () => {
         <div className="relative bg-stone-100 p-8 flex flex-col justify-center items-start border-r border-stone-200">
           <div className="absolute top-12 right-12 w-24 h-24 md:w-44 md:h-44 rounded-tr-[90px] overflow-hidden">
             <img
-              src="https://i.pinimg.com/736x/c0/58/5e/c0585e33f1a93ddcfc8286a46e384706.jpg"
+              src="https://i.pinimg.com/736x/03/10/9b/03109be439bf15390a57461bc957af26.jpg"
               alt="Artistic portrait with flowers"
               width={128}
               height={128}
@@ -42,7 +42,7 @@ const Section2 = () => {
         <div className="relative bg-stone-100 p-8 flex flex-col justify-center items-start">
           <div className="absolute top-12 right-10 w-24 h-24 md:w-44 md:h-44 rounded-tl-[90px] overflow-hidden">
             <img
-              src="https://i.pinimg.com/736x/2e/e3/a0/2ee3a0e79c421495f9cb4c29db90e9fc.jpg"
+              src="https://i.pinimg.com/736x/6a/4f/9e/6a4f9e78cb92d837a7686ad7edd20e40.jpg"
               alt="Hands wearing magical jewelry"
               width={128}
               height={128}

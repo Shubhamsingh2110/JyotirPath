@@ -5,17 +5,17 @@ const Section5 = () => {
     {
       name: "Aiyana Murphy",
       role: "Singer",
-      image: "https://i.pinimg.com/736x/86/1a/13/861a1327f0f38af0e626f00faa868535.jpg",
+      image: "https://i.pinimg.com/736x/3f/f5/1c/3ff51c5a29586ab8a0dfc72d57fea179.jpg",
     },
     {
       name: "Judith Gardner",
       role: "Dancer",
-      image: "https://i.pinimg.com/736x/cc/47/3e/cc473e6b0cd23fe3e3f6936c02bbb7c2.jpg",
+      image: "https://i.pinimg.com/736x/c4/e7/10/c4e7107f4b231612707e4231c5c3d9cf.jpg",
     },
     {
       name: "Sara Starks",
       role: "Director",
-      image: "https://i.pinimg.com/736x/26/7e/bd/267ebd2da134d9a30fe27cec6468d7de.jpg",
+      image: "https://i.pinimg.com/736x/a3/ae/ac/a3aeac1628cd4e9b4ead5dc43864e813.jpg",
     },
   ]
   const quote =

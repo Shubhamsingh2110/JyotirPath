@@ -1,30 +1,35 @@
 import React from 'react'
 const services = [
-    {
-      id: 1,
-      name: "Ancient Wisdom",
-      description: "Nesciunt debitis molestiae repellend oluptate qui vero enim consequ",
-      image: "https://i.pinimg.com/736x/89/93/cd/8993cde9408b47f751c7f268a2f98dfa.jpg",
-    },
-    {
-      id: 2,
-      name: "Compassionate Service",
-      description: "Nesciunt debitis molestiae repellend oluptate qui vero enim consequ",
-      image: "https://i.pinimg.com/736x/0a/9b/df/0a9bdfd06ae830fb1d9c2cec30ce3936.jpg",
-    },
-    {
-      id: 3,
-      name: "Proven Results",
-      description: "Nesciunt debitis molestiae repellend oluptate qui vero enim consequ",
-      image: "https://i.pinimg.com/736x/04/84/cf/0484cf4be799712f69f11aa91bc405bc.jpg",
-    },
-    {
-      id: 4,
-      name: "Guidance",
-      description: "Nesciunt debitis molestiae repellend oluptate qui vero enim consequ",
-      image: "https://i.pinimg.com/736x/f7/c7/ed/f7c7ed104575f1b60388e9506de1d002.jpg",
-    },
-  ]
+  {
+    id: 1,
+    name: "Ancient Wisdom",
+    description:
+      "Harnessing sacred Vedic knowledge and time-honored rituals to bring spiritual clarity, balance, and purpose to your life.",
+    image: "https://i.pinimg.com/736x/89/93/cd/8993cde9408b47f751c7f268a2f98dfa.jpg",
+  },
+  {
+    id: 2,
+    name: "Compassionate Service",
+    description:
+      "Personalized spiritual support through traditional fire rituals, mantra healing, and empathetic guidance for emotional peace.",
+    image: "https://i.pinimg.com/736x/0a/9b/df/0a9bdfd06ae830fb1d9c2cec30ce3936.jpg",
+  },
+  {
+    id: 3,
+    name: "Proven Results",
+    description:
+      "Blending scriptural insights with practical astrology to provide actionable guidance for success in relationships, career, and life.",
+    image: "https://i.pinimg.com/736x/04/84/cf/0484cf4be799712f69f11aa91bc405bc.jpg",
+  },
+  {
+    id: 4,
+    name: "Guidance",
+    description:
+      "One-on-one spiritual mentorship to align your path with higher purpose, inner peace, and long-term fulfillment.",
+    image: "https://i.pinimg.com/736x/f7/c7/ed/f7c7ed104575f1b60388e9506de1d002.jpg",
+  },
+];
+
 
 const Section3 = () => {
   return (
@@ -52,7 +57,7 @@ const Section3 = () => {
             MY SERVICES
           </h2>
           <p className="text-black text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-poppins">
-            Quasi dolores nisi officiis cupiditate quo occaecati voluptates nam
+            Guiding You Through Ancient Vedic Practices, Personalized Rituals, and Proven Astrological Wisdom 
           </p>
         </div>
 
