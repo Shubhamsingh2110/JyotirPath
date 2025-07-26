@@ -8,29 +8,29 @@ import img3 from './Muhuratimage/handimg.png'
 const Section3 = () => {
     const services = [
     {
-      title: "Wedding Muhurat",
-      description: "Gain deep insights into your personality, strengths, and life path.",
-      image: img,
-      alt: "Astrology compass symbol",
-    },
-    {
-      title: "Business Muhurat",
-      description: "Explore current challenges and future possibilities through symbolic guidance.",
-      image: img1,
-      alt: "Tarot moon symbol",
-    },
-    {
-      title: "Spiritual Muhurat",
-      description: "Discover the dynamics of your relationships through astrological insight.",
-      image: img2,
-      alt: "Yin yang relationship symbol",
-    },
-    {
-      title: "Personal Muhurat",
-      description: "Receive guidance and clarity on important decisions with ancient wisdom.",
-      image: img3,
-      alt: "Ancient rune symbol",
-    },
+    title: "Wedding Muhurat",
+    description: "Find the most auspicious date and time for a blissful and harmonious marriage.",
+    image: img,
+    alt: "Astrology compass symbol",
+  },
+  {
+    title: "Business Muhurat",
+    description: "Choose a prosperous time to launch or expand your business ventures successfully.",
+    image: img1,
+    alt: "Tarot moon symbol",
+  },
+  {
+    title: "Spiritual Muhurat",
+    description: "Align your spiritual practices with cosmic energies for deeper inner growth.",
+    image: img2,
+    alt: "Yin yang relationship symbol",
+  },
+  {
+    title: "Personal Muhurat",
+    description: "Select favorable moments for personal milestones, ensuring positivity and success.",
+    image: img3,
+    alt: "Ancient rune symbol",
+  },
   ]
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12 min-h-[400px]">

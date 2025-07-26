@@ -12,9 +12,9 @@ const Section5 = () => {
 
   const faqItems = [
     {
-      question: "What is core numbers?",
+      question: "What are core numbers?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "Core numbers are the foundational elements in numerology that reveal deep insights about your personality, life path, destiny, and inner desires.",
     },
     {
       question: "How can numerology help me?",

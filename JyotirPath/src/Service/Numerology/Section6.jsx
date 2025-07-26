@@ -16,7 +16,7 @@ const Section6 = () => {
             </h1>
 
             <p className="text-slate-300 text-lg leading-relaxed max-w-lg">
-              Discovering your life purpose through numbers is at the heart of numerology—a powerful ancient practice that reveals the hidden meaning behind your birth date and name. Each number holds a unique vibration and symbolism that can uncover your strengths, challenges, and spiritual path. By decoding these numbers, you gain deep insights into your personality, destiny, and the lessons you’re meant to learn in this lifetime.
+              Discovering your life purpose through numbers is at the heart of numerology, a powerful ancient practice that reveals the hidden meaning behind your birth date and name. Each number holds a unique vibration and symbolism that can uncover your strengths, challenges, and spiritual path. By decoding these numbers, you gain deep insights into your personality, destiny, and the lessons you’re meant to learn in this lifetime.
             </p>
 
       

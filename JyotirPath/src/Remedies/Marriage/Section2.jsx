@@ -28,7 +28,7 @@ const Section2 = () => {
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                With a deep understanding of astrology, tarot, and spiritual energies, I provide heartfelt guidance on marriage and partnerships. Whether you're navigating relationship challenges, exploring compatibility, or seeking divine timing for marriage, I offer clarity rooted in ancient wisdom.
+                With a deep understanding of astrology and spiritual energies, I provide heartfelt guidance on marriage and partnerships. Whether you're navigating relationship challenges, exploring compatibility, or seeking divine timing for marriage, I offer clarity rooted in ancient wisdom.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">

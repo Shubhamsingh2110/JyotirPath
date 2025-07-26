@@ -7,29 +7,29 @@ import img3 from './Educationimages/lotushand.png'
 const Section3 = () => {
     const services = [
     {
-      title: "Saraswati Puja",
-      description: "Gain deep insights into your personality, strengths, and life path.",
-      image: img,
-      alt: "Astrology compass symbol",
-    },
-    {
-      title: "Mercury Strengthening",
-      description: "Explore current challenges and future possibilities through symbolic guidance.",
-      image: img1,
-      alt: "Tarot moon symbol",
-    },
-    {
-      title: "Vidya Mantras",
-      description: "Discover the dynamics of your relationships through astrological insight.",
-      image: img2,
-      alt: "Yin yang relationship symbol",
-    },
-    {
-      title: "Success Rituals",
-      description: "Receive guidance and clarity on important decisions with ancient wisdom.",
-      image: img3,
-      alt: "Ancient rune symbol",
-    },
+    title: "Saraswati Puja",
+    description: "Invoke the blessings of Goddess Saraswati for wisdom.",
+    image: img,
+    alt: "Astrology compass symbol",
+  },
+  {
+    title: "Mercury Strengthening",
+    description: "Enhance communication, intelligence, and decision making through rituals.",
+    image: img1,
+    alt: "Tarot moon symbol",
+  },
+  {
+    title: "Vidya Mantras",
+    description: "Chant powerful mantras to improve concentration and memory.",
+    image: img2,
+    alt: "Yin yang relationship symbol",
+  },
+  {
+    title: "Success Rituals",
+    description: "Perform sacred rituals to attract prosperity and remove obstacles.",
+    image: img3,
+    alt: "Ancient rune symbol",
+  },
   ]
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12 min-h-[400px]">

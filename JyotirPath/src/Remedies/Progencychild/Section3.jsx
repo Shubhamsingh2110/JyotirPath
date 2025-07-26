@@ -7,29 +7,29 @@ import img3 from '../../RemediesImages/tree.png'
 const Section3 = () => {
     const services = [
     {
-      title: "Vedic Rituals",
-      description: "Gain deep insights into your personality, strengths, and life path.",
-      image: img,
-      alt: "Astrology compass symbol",
-    },
-    {
-      title: "Gemstone Therapy",
-      description: "Explore current challenges and future possibilities through symbolic guidance.",
-      image: img1,
-      alt: "Tarot moon symbol",
-    },
-    {
-      title: "Mantra Chanting",
-      description: "Discover the dynamics of your relationships through astrological insight.",
-      image: img2,
-      alt: "Yin yang relationship symbol",
-    },
-    {
-      title: "Fertility Enhancing",
-      description: "Receive guidance and clarity on important decisions with ancient wisdom.",
-      image: img3,
-      alt: "Ancient rune symbol",
-    },
+    title: "Vedic Rituals",
+    description: "Experience powerful traditional rituals that align your energies with cosmic forces.",
+    image: img,
+    alt: "Astrology compass symbol",
+  },
+  {
+    title: "Gemstone Therapy",
+    description: "Heal and balance your mind and body.",
+    image: img1,
+    alt: "Tarot moon symbol",
+  },
+  {
+    title: "Mantra Chanting",
+    description: "Awaken inner peace and spiritual strength through sacred sound .",
+    image: img2,
+    alt: "Yin yang relationship symbol",
+  },
+  {
+    title: "Fertility Enhancing",
+    description: "Harness ancient techniques and astrological timing to support.",
+    image: img3,
+    alt: "Ancient rune symbol",
+  }
   ]
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12 min-h-[400px]">

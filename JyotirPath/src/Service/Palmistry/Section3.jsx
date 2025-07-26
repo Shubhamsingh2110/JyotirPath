@@ -24,7 +24,7 @@ const Section3 = () => {
     icon: <img src={img2} className="w-8 h-8" />,
     title: "Annual forecast",
     description:
-      "Discover what the stars hold for you this year—opportunities, challenges, and key moments mapped out in advance.",
+      "Discover what the stars hold for you this year opportunities, challenges, and key moments mapped out in advance.",
   },
   {
     icon: <img src={img3} className="w-8 h-8" />,

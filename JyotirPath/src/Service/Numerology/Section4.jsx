@@ -21,7 +21,7 @@ const Section4 = () => {
                 year, forecasts key themes, and guides your decisions.
               </p>
               <div className="relative aspect-square mx-auto overflow-hidden">
-                <img src="https://i.pinimg.com/736x/02/0a/ac/020aacc099c9dfa3db512375b33ddd92.jpg" alt="img1" className='object-cover h-80 w-[500px]' />
+                <img src="https://i.pinimg.com/736x/02/0a/ac/020aacc099c9dfa3db512375b33ddd92.jpg" alt="img1" className='object-cover h-80 w-[500px] ' />
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Section4 = () => {
                 number interacts with others, shaping relationships.
               </p>
               <div className="relative aspect-square  mx-auto overflow-hidden">
-                    <img src="https://i.pinimg.com/736x/a9/bc/e0/a9bce0fb23d1c80481fc61970fb5b8a8.jpg" alt="img1" className='object-cover h-80 w-[500px]' />
+                    <img src="https://i.pinimg.com/736x/a9/bc/e0/a9bce0fb23d1c80481fc61970fb5b8a8.jpg" alt="img1" className='object-cover h-80 w-[500px] ' />
               </div>
             </div>
           </div>

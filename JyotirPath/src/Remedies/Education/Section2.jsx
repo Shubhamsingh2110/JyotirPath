@@ -46,7 +46,7 @@ const Section2 = () => {
               </p>
           
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                My mission is to support you on your educational journey—whether you're a student navigating new challenges,
+                My mission is to support you on your educational journey whether you're a student navigating new challenges,
                 a professional expanding your skills, or a lifelong learner hungry for insight. Together, we can unlock your
                 potential and foster a mindset of continuous learning and achievement.
               </p>

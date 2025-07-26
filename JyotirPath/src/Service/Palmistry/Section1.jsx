@@ -25,7 +25,7 @@ const Section1 = () => {
                   Palmistry, or chiromancy, is the ancient art of reading the lines, mounts, and features of the hand to uncover deep insights into your life’s path, personality, and destiny. For centuries, palm readers have interpreted these signs to reveal truth and guidance.
                 </p>
                 <p>
-                  Your hands tell a powerful story—about your relationships, health, career, and inner journey. Every curve, crease, and finger formation holds meaning. Discover what your palms say about you and unlock the wisdom waiting in your hands.
+                  Your hands tell a powerful story about your relationships, health, career, and inner journey. Every curve, crease, and finger formation holds meaning. Discover what your palms say about you and unlock the wisdom waiting in your hands.
                 </p>
               </div>
             </div>

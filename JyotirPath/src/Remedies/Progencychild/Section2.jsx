@@ -28,7 +28,7 @@ const Section2 = () => {
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                The journey of parenthood is not just a physical experience—it is a sacred passage of the soul. Through the lens of astrology, I offer a deeper understanding of your karmic blueprint and how it influences fertility, conception, and your spiritual bond with future children.
+                The journey of parenthood is not just a physical experience it is a sacred passage of the soul. Through the lens of astrology, I offer a deeper understanding of your karmic blueprint and how it influences fertility, conception, and your spiritual bond with future children.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ChevronRight } from "lucide-react"
-import img from './careerimages/person.png'
+import img from './careerimages/bgoffice.png'
 import { Link } from "react-router-dom";
 
 const Section2 = () => {

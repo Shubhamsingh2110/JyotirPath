@@ -28,7 +28,7 @@ const Section2 = () => {
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Grounded in the principles of Vedic astrology, I help you align with the universe by choosing the most auspicious moments—Shubh Muhurat—for life’s important milestones. Whether you're planning a wedding, new venture, or religious ritual, choosing the right time brings harmony and prosperity.
+                Grounded in the principles of Vedic astrology, I help you align with the universe by choosing the most auspicious moments Shubh Muhurat for life’s important milestones. Whether you're planning a wedding, new venture, or religious ritual, choosing the right time brings harmony and prosperity.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">

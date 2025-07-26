@@ -64,7 +64,7 @@ const Section5 = () => {
                 </div>
                 <h3 className="text-base sm:text-lg font-serif text-gray-900">Astrology</h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                  Discover the power of Vedic Astrology (Jyotish)—gain clarity through Kundli analysis, planetary
+                  Discover the power of Vedic Astrology and gain clarity through Kundli analysis, planetary
                   guidance, and personalized predictions by expert astrologers.
                 </p>
               </div>
@@ -132,7 +132,7 @@ const Section5 = () => {
                   </div>
                   <h3 className="text-lg font-serif text-gray-900">Astrology</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Discover the power of Vedic Astrology (Jyotish)—gain clarity through Kundli analysis, planetary
+                    Discover the power of Vedic Astrology and gain clarity through Kundli analysis, planetary
                     guidance, and personalized predictions by expert astrologers.
                   </p>
                 </div>

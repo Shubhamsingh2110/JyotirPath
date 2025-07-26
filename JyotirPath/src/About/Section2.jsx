@@ -2,21 +2,21 @@ import React from 'react'
 
  const testimonials = [
   {
-    name: "Ancient Wisdom",
+    name: "Ishita Reddy",
     role: "Vedic Astrology Expert",
     quote:
       "With over 20 years of experience, I help individuals uncover hidden energies through traditional Vedic methods to bring clarity and peace in their lives.",
     image: "https://sohinisastri.com/wp-content/uploads/2024/03/home-cover-subject-main.webp",
   },
   {
-    name: "Compassionate Service",
+    name: "Kritika Nair",
     role: "Spiritual Healer & Astrologer",
     quote:
       "I combine astrology with intuitive healing to guide people through emotional, career, and relationship transitions with compassion and accuracy.",
     image: "https://www.astrospring.com/images/content/about/astro_img1.jpg",
   },
   {
-    name: "Proven Results",
+    name: "Aarav Mehta",
     role: "Modern Astrologer & Life Coach",
     quote:
       "My approach blends ancient wisdom with modern tools, offering practical and transformative insights to help clients make confident life decisions.",

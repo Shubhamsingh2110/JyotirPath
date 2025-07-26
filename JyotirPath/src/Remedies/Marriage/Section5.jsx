@@ -74,7 +74,7 @@ const [currentStep, setCurrentStep] = useState(1)
        <div
       className="min-h-screen relative"
       style={{
-        backgroundImage: `url('https://i.pinimg.com/736x/1e/59/0b/1e590b7ca2b0e9645c4e3a6b90c1592f.jpg')`,
+        backgroundImage: `url('https://i.pinimg.com/1200x/b8/3e/07/b83e07b6c757e00f22acbf167f817181.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
