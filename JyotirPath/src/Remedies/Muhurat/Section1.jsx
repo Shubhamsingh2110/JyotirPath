@@ -19,7 +19,7 @@ const Section1 = () => {
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-4 tracking-wide font-cinzel text-amber-100">Muhurat & Timings</h1>
             <p className="text-lg md:text-xl lg:text-2xl font-light tracking-wide opacity-90 font-cinzel">
-                Find love, strengthen bondas, and receive divine blessings
+                 Choose the most auspicious moments for new beginnings, rituals, and spiritual milestones guided by divine timing
             </p>
           </div>
         </div>

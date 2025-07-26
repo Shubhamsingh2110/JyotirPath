@@ -3,7 +3,7 @@ import Section1 from '../Remedies/Career/Section1'
 import Section2 from '../Remedies/Career/Section2'
 import Section3 from '../Remedies/Career/Section3'
 import Section4 from '../Remedies/Career/Section4'
-import Section5 from '../Remedies/Career/Section5'
+import Section5 from '../Remedies/Marriage/Section5'
 import Contact from '../Components/Contact'
 
 

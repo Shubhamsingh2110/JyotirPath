@@ -13,7 +13,7 @@ const Section2 = () => {
             <div className="relative rounded-t-full overflow-hidden h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] w-full max-w-[525px] mx-auto lg:mx-0">
               <img
                 src="https://i.pinimg.com/736x/f2/af/af/f2afaf33fb5daa00bb0934fc5bf2f4be.jpg"
-                alt="Mystical tarot cards, crystals, and spiritual symbols arranged on a table"
+                alt="Vedic calendar, planets, and auspicious ritual items representing Muhurat"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -24,21 +24,15 @@ const Section2 = () => {
           <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-amber-700 font-cinzel leading-tight">
-                Mystical of Self-Discovery
+                Auspicious Muhurat & Divine Timings
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Drawing upon years of study and intuitive exploration, I offer a holistic approach to divination that
-                integrates the wisdom of the stars, the symbolism of tarot cards, and the ancient art of crystal
-                healing. My goal is to provide clarity and guidance to help you step into your life's journey, helping
-                you uncover hidden truths.
+                Grounded in the principles of Vedic astrology, I help you align with the universe by choosing the most auspicious moments—Shubh Muhurat—for life’s important milestones. Whether you're planning a wedding, new venture, or religious ritual, choosing the right time brings harmony and prosperity.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                My mission is to support you on your journey of self-discovery and personal growth. Whether you are
-                feeling overwhelmed, seeking clarity, or striving for spiritual enlightenment, I am here to assist you
-                in unlocking the mysteries of your inner self and connecting with the divine energy that surrounds us
-                all.
+                My mission is to guide you through the divine rhythms of planetary movements, tithi, nakshatra, and yogas to ensure your efforts are blessed with cosmic support. When your actions are synced with the universe, you invite clarity, abundance, and spiritual alignment.
               </p>
             </div>
 
@@ -50,7 +44,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-amber-700 flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Cosmic Guidance Sessions
+                        Wedding, Naming & Housewarming Muhurats
                       </span>
                     </div>
                   </div>
@@ -63,7 +57,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-amber-700 flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Divination and Insight Services
+                        Business Launch, Travel & Ritual Timings
                       </span>
                     </div>
                   </div>

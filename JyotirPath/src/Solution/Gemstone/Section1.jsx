@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react"
 
 const products = [
-  {
+{
     id: 1,
     name: "One-faced Rudrākṣa",
     description: "Represents Lord Śiva. Known to bestow divine power, spiritual enlightenment, and detachment.",
@@ -62,60 +62,52 @@ const products = [
   {
     id: 9,
     name: "Ruby",
-    description: "A mystical piece crafted to bring protection and positive energy to your daily journey.",
+    description: "Radiates Sun energy, supporting leadership, confidence, and recognition in professional life.",
     image: "https://i.pinimg.com/736x/b9/07/ba/b907ba43be9731283f41a1219e885d17.jpg",
-    alt: "Person wearing a talisman necklace",
+    alt: "Ruby gemstone",
   },
   {
     id: 10,
     name: "Pearl",
-    description: "Pure amethyst crystal known for its calming properties and spiritual healing benefits.",
+    description: "Calms the mind and balances emotions — ideal for mental clarity and peaceful decision-making.",
     image: "https://i.pinimg.com/736x/d2/4e/af/d24eaf3925be6f38f6a1256cc54ccdd4.jpg",
-    alt: "Clear amethyst crystal",
+    alt: "Pearl gemstone",
   },
   {
     id: 11,
     name: "Red Coral",
-    description: "Elegant golden bracelet designed to enhance confidence and attract abundance.",
+    description: "Strengthens Mars energy, enhancing drive, ambition, and courage in professional pursuits.",
     hasAddToCart: true,
     image: "https://i.pinimg.com/736x/c0/a5/8a/c0a58aaa33517d0b6542b3b26a3f903e.jpg",
-    alt: "Gold bracelet on wrist",
+    alt: "Red Coral gemstone",
   },
   {
     id: 12,
     name: "Emerald",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
+    description: "Boosts Mercury traits — intellect, communication, and business acumen.",
     image: "https://i.pinimg.com/736x/f1/f0/c4/f1f0c4f061ff872c10c267f77fb2fff4.jpg",
-    alt: "Natal astrology wheel over sea background",
+    alt: "Emerald gemstone",
   },
   {
     id: 13,
     name: "Diamond",
-    description: "A mystical piece crafted to bring protection and positive energy to your daily journey.",
+    description: "Enhances Venus energy — luxury, charm, and creativity — ideal for artistic and leadership roles.",
     image: "https://i.pinimg.com/736x/14/df/05/14df0587d3b0e948ed18d3528cce906e.jpg",
-    alt: "Person wearing a talisman necklace",
+    alt: "Diamond gemstone",
   },
   {
     id: 14,
     name: "Blue Sapphire",
-    description: "Pure amethyst crystal known for its calming properties and spiritual healing benefits.",
+    description: "Strengthens Saturn's influence — discipline, responsibility, and long-term growth in career.",
     image: "https://i.pinimg.com/736x/a7/b0/7e/a7b07eb171b45ce382ca62c3462a2615.jpg",
-    alt: "Clear amethyst crystal",
+    alt: "Blue Sapphire gemstone",
   },
   {
     id: 15,
-    name: "Coral",
-    description: "Elegant golden bracelet designed to enhance confidence and attract abundance.",
-    hasAddToCart: true,
-    image: "https://i.pinimg.com/736x/a7/df/06/a7df0651de1d26a4c4a17275f8c57ac5.jpg",
-    alt: "Gold bracelet on wrist",
-  },
-  {
-    id: 16,
     name: "Blue Pearl",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
+    description: "Combines lunar calmness with intuition, helping in career transitions and emotional resilience.",
     image: "https://i.pinimg.com/736x/2a/f9/94/2af994387190bf5e3d1443b0b8950f5b.jpg",
-    alt: "Natal astrology wheel over sea background",
+    alt: "Blue Pearl gemstone",
   },
 
 ];

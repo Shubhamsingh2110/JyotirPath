@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
-   <div className="bg-white">
+    <div className="bg-white">
       {/* Main Content */}
       <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
@@ -24,21 +24,15 @@ const Section2 = () => {
           <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-800 font-cinzel leading-tight">
-                Mystical of Self-Discovery
+                Vedic Insights into Parenthood and Progeny
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Drawing upon years of study and intuitive exploration, I offer a holistic approach to divination that
-                integrates the wisdom of the stars, the symbolism of tarot cards, and the ancient art of crystal
-                healing. My goal is to provide clarity and guidance to help you step into your life's journey, helping
-                you uncover hidden truths.
+                The journey of parenthood is not just a physical experience—it is a sacred passage of the soul. Through the lens of astrology, I offer a deeper understanding of your karmic blueprint and how it influences fertility, conception, and your spiritual bond with future children.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                My mission is to support you on your journey of self-discovery and personal growth. Whether you are
-                feeling overwhelmed, seeking clarity, or striving for spiritual enlightenment, I am here to assist you
-                in unlocking the mysteries of your inner self and connecting with the divine energy that surrounds us
-                all.
+                Whether you're hoping to conceive, facing challenges on the path to parenthood, or simply seeking clarity about your role as a parent, I am here to guide you. By exploring planetary alignments, birth charts, and divine timing, we illuminate the path to welcoming a soul destined to join your life’s journey. Embrace the mysteries of progeny and discover the cosmic threads that connect you to your future lineage.
               </p>
             </div>
 
@@ -50,7 +44,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Cosmic Guidance Sessions
+                        Fertility & Conception Insights
                       </span>
                     </div>
                   </div>
@@ -63,7 +57,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Divination and Insight Services
+                        Karmic Bonds with Children
                       </span>
                     </div>
                   </div>
@@ -84,4 +78,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Section2;

@@ -14,21 +14,20 @@ const products = [
   {
     id: 1,
     name: "Sun",
-    description: "A mystical piece crafted to bring protection and positive energy to your daily journey.",
+    description: "Symbolizes leadership, authority, and self-expression. A strong Sun brings confidence and recognition in career.",
     image: img,
-    alt: "Person wearing a talisman necklace",
   },
   {
     id: 2,
     name: "Moon",
-    description: "Pure amethyst crystal known for its calming properties and spiritual healing benefits.",
+    description: "Represents emotional intelligence, mental peace, and intuition — crucial for decision-making and adaptability at work.",
     image: img1,
     alt: "Clear amethyst crystal",
   },
   {
     id: 3,
     name: "Mars",
-    description: "Elegant golden bracelet designed to enhance confidence and attract abundance.",
+    description: "The planet of energy, courage, and initiative. A favorable Mars fuels ambition, drive, and leadership in action.",
     hasAddToCart: true,
     image: img2,
     alt: "Gold bracelet on wrist",
@@ -36,40 +35,41 @@ const products = [
   {
     id: 4,
     name: "Mercury",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
+    description: "Influences communication, intelligence, and business acumen. Enhances clarity, logic, and professional growth.",
     image: img3,
     alt: "Natal astrology wheel over sea background",
   },
   {
     id: 5,
     name: "Jupiter",
-    description: "A mystical piece crafted to bring protection and positive energy to your daily journey.",
+    description: "Planet of wisdom, expansion, and good fortune. A powerful Jupiter brings career growth, knowledge, and blessings.",
     image: img4,
     alt: "Person wearing a talisman necklace",
   },
   {
     id: 6,
     name: "Venus",
-    description: "Pure amethyst crystal known for its calming properties and spiritual healing benefits.",
+    description: "Governs creativity, luxury, and interpersonal skills. Helps in careers involving art, beauty, media, and diplomacy.",
     image: img5,
     alt: "Clear amethyst crystal",
   },
   {
     id: 7,
     name: "Saturn",
-    description: "Elegant golden bracelet designed to enhance confidence and attract abundance.",
+    description: "The taskmaster of karma and discipline. Teaches patience and perseverance, essential for long-term career success.",
     hasAddToCart: true,
     image: img6,
     alt: "Gold bracelet on wrist",
   },
   {
     id: 8,
-    name: "pluto",
-    description: "Personalized astrological reading revealing your cosmic blueprint and life path.",
+    name: "Pluto",
+    description: "Planet of deep transformation and power. Brings profound career shifts, uncovering hidden strength and purpose.",
     image: img7,
     alt: "Natal astrology wheel over sea background",
   },
-]
+];
+
 
 const Section1 = () => {
  const [hoveredProduct, setHoveredProduct] = useState(null)

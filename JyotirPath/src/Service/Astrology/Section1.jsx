@@ -21,7 +21,7 @@ export default function CompatibilityPage() {
   const slides = [
     {
       title: "Understand your life purpose and destiny",
-      subtitle: "Discover your romantic compatibility",
+      subtitle: "Uncover your dharma, decode karmic patterns, and align with your soul’s divine journey",
       image: img1,
     },
     {

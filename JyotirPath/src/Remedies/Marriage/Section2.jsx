@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
-   <div className="bg-white">
-      {/* Main Content */}
+    <div className="bg-white">
       <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+          
           {/* Left Side - Image */}
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-tr-[80px] sm:rounded-tr-[120px] lg:rounded-tr-[150px] overflow-hidden h-[300px] sm:h-[400px] lg:h-[550px] w-full max-w-[525px] mx-auto lg:mx-0">
@@ -24,21 +24,15 @@ const Section2 = () => {
           <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-800 font-cinzel leading-tight">
-                Mystical of Self-Discovery
+                Mystical Insights on Marriage
               </h1>
 
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Drawing upon years of study and intuitive exploration, I offer a holistic approach to divination that
-                integrates the wisdom of the stars, the symbolism of tarot cards, and the ancient art of crystal
-                healing. My goal is to provide clarity and guidance to help you step into your life's journey, helping
-                you uncover hidden truths.
+                With a deep understanding of astrology, tarot, and spiritual energies, I provide heartfelt guidance on marriage and partnerships. Whether you're navigating relationship challenges, exploring compatibility, or seeking divine timing for marriage, I offer clarity rooted in ancient wisdom.
               </p>
 
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                My mission is to support you on your journey of self-discovery and personal growth. Whether you are
-                feeling overwhelmed, seeking clarity, or striving for spiritual enlightenment, I am here to assist you
-                in unlocking the mysteries of your inner self and connecting with the divine energy that surrounds us
-                all.
+                My mission is to help you build and maintain fulfilling, soul-connected relationships. Whether you're newly engaged, facing crossroads in your union, or searching for your life partner, I support you in uncovering the spiritual insights and cosmic alignment behind your love story.
               </p>
             </div>
 
@@ -50,7 +44,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Cosmic Guidance Sessions
+                        Astrological Compatibility & Timing
                       </span>
                     </div>
                   </div>
@@ -63,7 +57,7 @@ const Section2 = () => {
                     <div className="flex items-center space-x-3">
                       <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
-                        Divination and Insight Services
+                        Soulmate & Relationship Readings
                       </span>
                     </div>
                   </div>

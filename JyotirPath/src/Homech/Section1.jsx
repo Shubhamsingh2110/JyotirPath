@@ -37,16 +37,16 @@ const Section1 = () => {
           </div>
 
           {/* Tertiary Title */}
-          <div className="text-center mt-4">
-            <h3 className="text-2xl font-serif text-gray-900 leading-tight">Unveil Your Future with Cards</h3>
-          </div>
+<div className="text-center mt-4">
+  <h3 className="text-2xl font-serif text-gray-900 leading-tight">Discover Your Destiny with Vedic Astrology</h3>
+</div>
 
-          {/* Description */}
-          <div className="text-center max-w-sm mt-6">
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Step into the mystical world of tarot and uncover the secrets that the future holds. Let our experienced
-              fortune teller guide you through the cards, revealing insights and wisdom tailored just for you.
-            </p>
+{/* Description */}
+<div className="text-center max-w-sm mt-6">
+  <p className="text-sm text-gray-600 leading-relaxed">
+    Enter the sacred world of Jyotiṣa and unveil your life's blueprint through ancient astrological wisdom.
+    Our expert astrologers interpret your birth chart and planetary influences to guide you on your destined path.
+  </p>
           </div>
         </div>
 
@@ -88,25 +88,25 @@ const Section1 = () => {
             </h2>
             <div className="mt-2">
               <span className="text-4xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-serif italic text-gray-900">
-                with Stars
+              <span className='text-white'>wi</span>th Stars
               </span>
             </div>
           </div>
 
-          {/* "Unveil Your Future with Cards" - Bottom left */}
-          <div className="absolute bottom-32 lg:bottom-72 left-0 z-20">
-            <h3 className="text-2xl lg:text-4xl xl:text-5xl font-serif text-gray-900 leading-tight">Unveil Your</h3>
-            <h3 className="text-2xl lg:text-4xl xl:text-5xl font-serif text-gray-900 leading-tight mt-1">
-              Future with Cards
-            </h3>
-          </div>
+         {/* "Discover Your Destiny with Vedic Astrology" - Bottom left */}
+<div className="absolute bottom-32 lg:bottom-72 left-0 z-20">
+  <h3 className="text-2xl lg:text-4xl xl:text-5xl font-serif text-gray-900 leading-tight"> Destiny with </h3>
+  <h3 className="text-2xl lg:text-4xl xl:text-5xl font-serif text-gray-900 leading-tight mt-1">
+  Vedic Astrology
+  </h3>
+</div>
 
-          {/* Subtext - Bottom left */}
-          <div className="absolute bottom-8 lg:bottom-44 right-[800px] z-20 max-w-md lg:max-w-lg">
-            <p className="text-sm lg:text-base text-gray-600 leading-10">
-              Step into the mystical world of tarot and uncover the secrets that the future holds. Let our experienced
-              fortune teller guide you through the cards, revealing insights and wisdom tailored just for you.
-            </p>
+{/* Subtext - Bottom left */}
+<div className="absolute bottom-8 lg:bottom-44 right-[800px] z-20 max-w-md lg:max-w-lg">
+  <p className="text-sm lg:text-base text-gray-600 leading-10">
+    Enter the sacred realm of Jyotiṣa and uncover your cosmic path. Our experienced astrologers read your birth chart and 
+    planetary alignments to reveal personalized insights, karmic lessons, and the direction the universe intends for you.
+  </p>
           </div>
         </div>
       </div>

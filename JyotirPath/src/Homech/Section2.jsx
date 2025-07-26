@@ -10,15 +10,16 @@ const Section2 = () => {
         <div className="block md:hidden space-y-8">
           {/* Mobile Header */}
           <div className="text-center space-y-4">
-            <p className="text-sm italic text-gray-600 font-light tracking-wide">Tarot Insights</p>
+            <p className="text-sm italic text-gray-600 font-light tracking-wide">Jyotish Insights</p>
             <h1 className="text-3xl font-serif font-light text-gray-900">
-              Mysteries of Life
+              Discover Life’s Mysteries
               <br />
-              with a Star Guide
+              with a Vedic Star Guide
             </h1>
             <p className="text-base text-gray-600 leading-relaxed">
-              Whether you seek guidance on love, career, or personal growth, each card drawn will bring clarity and
-              wisdom. Connect with the ancient art of tarot and let the answers you seek come to light.
+              Whether you're seeking clarity in love, career, or spiritual growth, your birth chart reveals ancient truths. 
+              Vedic astrology connects you to the cosmic rhythm of the planets and guides your path with divine precision. 
+              Tap into Jyotish Shastra and let your destiny unfold.
             </p>
           </div>
 
@@ -52,7 +53,6 @@ const Section2 = () => {
           <div className="grid grid-cols-2 gap-8 mt-8">
             <div className="text-center space-y-2">
             </div>
-             
           </div>
         </div>
 
@@ -79,20 +79,20 @@ const Section2 = () => {
 
           {/* Center Content */}
           <div className="col-span-4 flex flex-col justify-start space-y-4 lg:space-y-6 px-2 lg:px-8 text-left">
-            {/* Subheading */}
-            <p className="text-sm italic text-gray-600 font-light tracking-wide">Tarot Insights</p>
+          
 
             {/* Main Heading */}
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-serif font-light text-gray-900 leading-tight">
-              Mysteries of Life
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-serif font-light text-gray-900 leading-tight text-center">
+              Discover Life’s Mysteries
               <br />
-              with a Star Guide
+              with a Vedic Star Guide
             </h1>
 
             {/* Description */}
-            <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
-              Whether you seek guidance on love, career, or personal growth, each card drawn will bring clarity and
-              wisdom. Connect with the ancient art of tarot and let the answers you seek come to light.
+            <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-center">
+              Whether you're seeking clarity in love, career, or spiritual growth, your birth chart reveals ancient truths. 
+              Vedic astrology connects you to the cosmic rhythm of the planets and guides your path with divine precision. 
+              Tap into Jyotish Shastra and let your destiny unfold.
             </p>
 
             {/* Second Statistic */}

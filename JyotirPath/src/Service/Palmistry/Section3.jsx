@@ -8,43 +8,44 @@ import img5 from '../../PalmistryImages/image.png'
 
 const Section3 = () => {
     const services = [
-    {
-      icon: <img src={img} className="w-8 h-8" />,
-      title: "General consultation",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-    {
-      icon: <img src={img1} className="w-8 h-8" />,
-      title: "Personal life advice",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-    {
-      icon: <img src={img2} className="w-8 h-8" />,
-      title: "Annual forecast",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-    {
-      icon: <img src={img3} className="w-8 h-8" />,
-      title: "Work, career, finance",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-    {
-      icon: <img src={img4} className="w-8 h-8" />,
-      title: "Forecast of future events",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-    {
-      icon: <img src={img5} className="w-8 h-8" />,
-      title: "Current life situation",
-      description:
-        "Astrology is one of the earliest attempts made by man to find the order hidden behind or within the confusing and apparent chaos that exists in the world.",
-    },
-  ]
+  {
+    icon: <img src={img} className="w-8 h-8" />,
+    title: "General consultation",
+    description:
+      "Unlock insights into your overall life path. From personality traits to decision patterns, understand what’s guiding your journey.",
+  },
+  {
+    icon: <img src={img1} className="w-8 h-8" />,
+    title: "Personal life advice",
+    description:
+      "Facing emotional crossroads or relationship confusion? Get personalized guidance to help you make empowered life choices.",
+  },
+  {
+    icon: <img src={img2} className="w-8 h-8" />,
+    title: "Annual forecast",
+    description:
+      "Discover what the stars hold for you this year—opportunities, challenges, and key moments mapped out in advance.",
+  },
+  {
+    icon: <img src={img3} className="w-8 h-8" />,
+    title: "Work, career, finance",
+    description:
+      "Explore your professional path and financial future. Find clarity on career direction and timing for smart decisions.",
+  },
+  {
+    icon: <img src={img4} className="w-8 h-8" />,
+    title: "Forecast of future events",
+    description:
+      "Get a glimpse into what’s coming. From big decisions to life shifts, use cosmic timing to move with confidence.",
+  },
+  {
+    icon: <img src={img5} className="w-8 h-8" />,
+    title: "Current life situation",
+    description:
+      "Feeling uncertain? Understand the deeper forces shaping your present and find clarity for your next step.",
+  },
+];
+
   return (
     <div className="relative min-h-screen bg-[#1C1C27] overflow-hidden">
       {/* Main content */}
