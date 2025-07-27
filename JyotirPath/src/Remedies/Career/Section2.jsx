@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRight } from "lucide-react"
+import { Dot } from "lucide-react"
 import img from './careerimages/bgoffice.png'
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ const Section2 = () => {
               </div>
 
               {/* Secondary Image - Overlapping */}
-              <div className="absolute -bottom-4 sm:-bottom-6 lg:bottom-1 left-1/2 lg:left-20 transform -translate-x-1/2 lg:translate-x-0 lg:right-32 xl:right-48 w-[200px] sm:w-[250px] lg:w-[280px] xl:w-[300px] h-[280px] sm:h-[350px] lg:h-[390px] xl:h-[420px] z-10">
+              <div className="absolute -bottom-4 sm:-bottom-6 lg:bottom-1 left-1/2 lg:left-20 transform -translate-x-1/2 lg:translate-x-0 lg:right-32 xl:right-48 w-[200px] sm:w-[250px] lg:w-[280px] xl:w-[300px] h-[280px] sm:h-[350px] lg:h-[390px] xl:h-[420px] z-10 ">
                 <img
                   src={img}
                   alt="Person meditating on career decisions guided by astrology"
@@ -54,7 +54,7 @@ const Section2 = () => {
                   <div className="p-4 sm:p-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400 flex-shrink-0" />
+                        <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-orange-400 flex-shrink-0" />
                         <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
                           Career & Profession Chart Reading
                         </span>
@@ -67,7 +67,7 @@ const Section2 = () => {
                   <div className="p-4 sm:p-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400 flex-shrink-0" />
+                        <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-orange-400 flex-shrink-0" />
                         <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
                           Dasha Timing & Job Change Guidance
                         </span>

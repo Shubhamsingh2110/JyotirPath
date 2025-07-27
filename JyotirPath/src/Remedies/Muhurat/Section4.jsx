@@ -6,14 +6,14 @@ const services = [
     id: 1,
     title: "Rahu Kaal",
     description: "Compare your synastry and potential couple challenges.",
-    image: "https://i.pinimg.com/736x/db/9a/52/db9a52d128030b4d20fdba9a53f9e5e8.jpg",
+    image: "https://i.pinimg.com/1200x/32/c4/a5/32c4a573ac2b89d83ec8e6d7e24b8bf7.jpg",
     alt: "Meditation pose with chakra symbols",
   },
   {
     id: 2,
     title: "Yamaganda Kaal",
     description: "Unlock the secrets of your unique birth chart, including your Sun.",
-    image: "https://i.pinimg.com/736x/9c/73/28/9c73288920fce0c22c46b5804cebd47e.jpg",
+    image: "https://i.pinimg.com/1200x/9c/09/7a/9c097a34d85a93a66be81303d934d5a5.jpg",
     alt: "Astrological birth chart with planetary positions",
   },
   {
@@ -27,7 +27,7 @@ const services = [
     id: 4,
     title: "Gulika Kaal",
     description: "Gain a deeper understanding of your personality traits, strengths.",
-    image: "https://i.pinimg.com/736x/3f/a8/c8/3fa8c83a38bcda886ad24ac70fd0f3cd.jpg",
+    image: "https://i.pinimg.com/1200x/ee/59/1a/ee591ae285440246842cf89c36d065bf.jpg",
     alt: "Zodiac wheel with sun symbol in center",
   },
 ]

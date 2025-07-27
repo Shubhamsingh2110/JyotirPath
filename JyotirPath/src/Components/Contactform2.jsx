@@ -213,10 +213,11 @@ const ContactForm = () => {
                 <option value="" className="text-amber-600">
                   Subject
                 </option>
-                <option value="general">Marriage Muhurat</option>
-                <option value="support">Kundali Matching</option>
-                <option value="business">Love Marriage Consultation</option>
-                <option value="feedback">Doshas & Remedies</option>
+                <option value="general">Marriage </option>
+                <option value="support">Progency</option>
+                <option value="business">Education</option>
+                <option value="feedback">Career</option>
+                <option value="feedback">Muhurat</option>
               </select>
               <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-600 pointer-events-none" />
             </div>

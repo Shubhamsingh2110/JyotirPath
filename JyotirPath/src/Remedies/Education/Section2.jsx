@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRight } from "lucide-react"
+import { Dot } from "lucide-react"
 import img from '../../Images/image copy.png'
 import { Link } from "react-router-dom";
 
@@ -59,7 +59,7 @@ const Section2 = () => {
                 <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
+                      <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-blue-400 flex-shrink-0" />
                       <span className="font-normal text-gray-800 text-sm sm:text-base">Cosmic Guidance Sessions</span>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const Section2 = () => {
                 <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
+                      <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-blue-400 flex-shrink-0" />
                       <span className="font-normal text-gray-800 text-sm sm:text-base">
                         Divination and Insight Services
                       </span>

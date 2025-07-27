@@ -26,7 +26,7 @@ const services = [
     name: "Guidance",
     description:
       "One-on-one spiritual mentorship to align your path with higher purpose, inner peace, and long-term fulfillment.",
-    image: "https://i.pinimg.com/736x/f7/c7/ed/f7c7ed104575f1b60388e9506de1d002.jpg",
+    image: "https://i.pinimg.com/1200x/7e/19/6c/7e196cbac38347cbe137bbd425c15476.jpg",
   },
 ];
 
@@ -54,7 +54,7 @@ const Section3 = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-cinzel text-[#b69066] uppercase tracking-wider mb-6">
-            MY SERVICES
+            Our SERVICES
           </h2>
           <p className="text-black text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-poppins">
             Guiding You Through Ancient Vedic Practices, Personalized Rituals, and Proven Astrological Wisdom 

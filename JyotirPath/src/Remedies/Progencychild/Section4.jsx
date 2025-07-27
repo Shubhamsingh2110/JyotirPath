@@ -20,7 +20,7 @@ const services = [
     id: 3,
     title: "Kundali matching & providing remedies",
     description: "Helping you prepare for opportunities and challenges.",
-    image: "https://images.pexels.com/photos/5119602/pexels-photo-5119602.jpeg",
+    image: "https://i.pinimg.com/736x/df/99/5d/df995d059deec0022dafea2da6291aa6.jpg",
     alt: "Tarot cards spread on wooden surface",
   },
   {

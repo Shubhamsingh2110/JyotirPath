@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRight } from "lucide-react"
+import { Dot } from "lucide-react"
 import { Link } from "react-router-dom";
 
 const Section2 = () => {
@@ -42,7 +42,7 @@ const Section2 = () => {
                 <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
+                      <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
                         Fertility & Conception Insights
                       </span>
@@ -55,7 +55,7 @@ const Section2 = () => {
                 <div className="p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
+                      <Dot className="w-5 h-5 sm:w-10 sm:h-10 text-black flex-shrink-0" />
                       <span className="font-normal text-gray-800 font-cinzel text-sm sm:text-base">
                         Karmic Bonds with Children
                       </span>

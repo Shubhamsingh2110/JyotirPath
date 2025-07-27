@@ -99,14 +99,14 @@ const products = [
     id: 14,
     name: "Blue Sapphire",
     description: "Strengthens Saturn's influence — discipline, responsibility, and long-term growth in career.",
-    image: "https://i.pinimg.com/736x/a7/b0/7e/a7b07eb171b45ce382ca62c3462a2615.jpg",
+    image: "https://i.pinimg.com/1200x/83/73/82/8373825616a533d6ae95ca04a6df81c8.jpg",
     alt: "Blue Sapphire gemstone",
   },
   {
     id: 15,
     name: "Blue Pearl",
     description: "Combines lunar calmness with intuition, helping in career transitions and emotional resilience.",
-    image: "https://i.pinimg.com/736x/2a/f9/94/2af994387190bf5e3d1443b0b8950f5b.jpg",
+    image: "https://i.pinimg.com/1200x/e1/ab/eb/e1abeb40c1b89911f87878bd2c61e491.jpg",
     alt: "Blue Pearl gemstone",
   },
 
