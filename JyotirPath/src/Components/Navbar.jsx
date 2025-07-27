@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en"); // Add state for current language
   const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
@@ -15,21 +16,37 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleTranslate = (langCode) => {
+    const selectEl = document.querySelector(".goog-te-combo");
+    if (selectEl) {
+      selectEl.value = langCode;
+      selectEl.dispatchEvent(new Event("change"));
+    }
+  };
+
   useEffect(() => {
-    const addTranslateScript = () => {
-      const script = document.createElement("script");
-      script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      document.body.appendChild(script);
+    // Define the global init function before the script is loaded
+    window.googleTranslateElementInit = () => {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+      }
     };
 
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
+    const addTranslateScript = () => {
+      if (!document.querySelector("#google-translate-script")) {
+        const script = document.createElement("script");
+        script.id = "google-translate-script";
+        script.src =
+          "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        document.body.appendChild(script);
+      }
     };
 
     addTranslateScript();
@@ -116,10 +133,20 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ease-out" style={{ backgroundColor: "#C89B6D" }} />
             </button>
 
-            {/* Translate Buttons */}
+            {/* Translate Buttons with active state styling */}
             <div className="flex gap-2 ml-4">
-              <button onClick={() => handleTranslate("hi")} className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm">हिंदी</button>
-              <button onClick={() => handleTranslate("en")} className="px-3 py-1 border border-[#C89B6D] text-[#C89B6D]  rounded-full text-sm">English</button>
+              <button
+                onClick={() => handleTranslate("hi")}
+                className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm"
+              >
+                हिंदी
+              </button>
+              <button
+                onClick={() => handleTranslate("en")}
+                className="px-3 py-1 border border-[#C89B6D] text-[#C89B6D] rounded-full text-sm"
+              >
+                English
+              </button>
             </div>
           </nav>
 
@@ -157,10 +184,34 @@ const Navbar = () => {
             <button onClick={() => handleNavigate("/about")} className="block">ABOUT US</button>
             <button onClick={() => handleNavigate("/contact")} className="block">CONTACT</button>
 
-            {/* Mobile Translate Buttons */}
+            {/* Translate Buttons */}
             <div className="flex gap-2 mt-4">
-              <button onClick={() => handleTranslate("hi")} className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm">हिंदी</button>
-              <button onClick={() => handleTranslate("en")} className="px-3 py-1 border border-[#C89B6D] text-[#C89B6D] rounded-full text-sm">English</button>
+              <button 
+                onClick={() => {
+                  handleTranslate("hi");
+                  localStorage.setItem('preferredLanguage', 'hi');
+                }} 
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "hi"
+                    ? "bg-[#C89B6D] text-white" 
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                हिंदी
+              </button>
+              <button 
+                onClick={() => {
+                  handleTranslate("en");
+                  localStorage.setItem('preferredLanguage', 'en');
+                }} 
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "en"
+                    ? "bg-[#C89B6D] text-white"
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                English
+              </button>
             </div>
           </div>
         )}
