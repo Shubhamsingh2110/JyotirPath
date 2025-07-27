@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en"); // Add state for current language
   const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
@@ -16,6 +17,10 @@ const Navbar = () => {
   };
 
   const handleTranslate = (langCode) => {
+    // Update current language state
+    setCurrentLanguage(langCode);
+    
+    // Trigger Google Translate
     const selectEl = document.querySelector(".goog-te-combo");
     if (selectEl) {
       selectEl.value = langCode;
@@ -24,6 +29,21 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // Try to detect initial language from localStorage or browser
+    const detectInitialLanguage = () => {
+      // Check localStorage first
+      const savedLanguage = localStorage.getItem('preferredLanguage');
+      if (savedLanguage) {
+        setCurrentLanguage(savedLanguage);
+      }
+      // If no saved preference, check browser language
+      else if (navigator.language && navigator.language.includes('hi')) {
+        setCurrentLanguage('hi');
+      }
+    };
+
+    detectInitialLanguage();
+
     // Define the global init function before the script is loaded
     window.googleTranslateElementInit = () => {
       if (window.google && window.google.translate) {
@@ -34,6 +54,18 @@ const Navbar = () => {
           },
           "google_translate_element"
         );
+        
+        // Apply saved language after init
+        setTimeout(() => {
+          const savedLang = localStorage.getItem('preferredLanguage');
+          if (savedLang && savedLang !== 'en') {
+            const selectEl = document.querySelector(".goog-te-combo");
+            if (selectEl) {
+              selectEl.value = savedLang;
+              selectEl.dispatchEvent(new Event("change"));
+            }
+          }
+        }, 1000);
       }
     };
 
@@ -90,17 +122,31 @@ const Navbar = () => {
             <NavButton onClick={() => navigate("/about")}>ABOUT US</NavButton>
             <NavButton onClick={() => navigate("/contact")}>CONTACT</NavButton>
 
-            {/* Translate Buttons */}
+            {/* Translate Buttons with active state styling */}
             <div className="flex gap-2 ml-4">
               <button
-                onClick={() => handleTranslate("hi")}
-                className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm"
+                onClick={() => {
+                  handleTranslate("hi");
+                  localStorage.setItem('preferredLanguage', 'hi');
+                }}
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "hi"
+                    ? "bg-[#C89B6D] text-white" 
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
               >
                 हिंदी
               </button>
               <button
-                onClick={() => handleTranslate("en")}
-                className="px-3 py-1 border border-[#C89B6D] text-[#C89B6D] rounded-full text-sm"
+                onClick={() => {
+                  handleTranslate("en");
+                  localStorage.setItem('preferredLanguage', 'en');
+                }}
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "en"
+                    ? "bg-[#C89B6D] text-white"
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
               >
                 English
               </button>
@@ -147,10 +193,34 @@ const Navbar = () => {
             <button onClick={() => handleNavigate("/about")}>ABOUT US</button>
             <button onClick={() => handleNavigate("/contact")}>CONTACT</button>
 
-            {/* Translate Buttons */}
+            {/* Translate Buttons with active state styling for mobile */}
             <div className="flex gap-2 mt-4">
-              <button onClick={() => handleTranslate("hi")} className="px-3 py-1 bg-[#C89B6D] text-white rounded-full text-sm">हिंदी</button>
-              <button onClick={() => handleTranslate("en")} className="px-3 py-1 border border-[#C89B6D] text-[#C89B6D] rounded-full text-sm">English</button>
+              <button 
+                onClick={() => {
+                  handleTranslate("hi");
+                  localStorage.setItem('preferredLanguage', 'hi');
+                }} 
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "hi"
+                    ? "bg-[#C89B6D] text-white" 
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                हिंदी
+              </button>
+              <button 
+                onClick={() => {
+                  handleTranslate("en");
+                  localStorage.setItem('preferredLanguage', 'en');
+                }} 
+                className={`px-3 py-1 rounded-full text-sm transition-colors ${
+                  currentLanguage === "en"
+                    ? "bg-[#C89B6D] text-white"
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                English
+              </button>
             </div>
           </div>
         )}
