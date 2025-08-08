@@ -1,33 +1,24 @@
-"use client"
-
-import { Menu, X } from "lucide-react"
-import { useEffect, useState } from "react"
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [currentLanguage, setCurrentLanguage] = useState("en")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
-
-  const handleNavigate = (path) => {
-    // You can replace this with your preferred navigation method
-    // For example: window.location.href = path
-    // Or use React Router: navigate(path)
-    window.location.href = path
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const handleTranslate = (langCode) => {
-    const selectEl = document.querySelector(".goog-te-combo")
+    const selectEl = document.querySelector(".goog-te-combo");
     if (selectEl) {
-      selectEl.value = langCode
-      selectEl.dispatchEvent(new Event("change"))
-      setCurrentLanguage(langCode)
-      localStorage.setItem("preferredLanguage", langCode)
+      selectEl.value = langCode;
+      selectEl.dispatchEvent(new Event("change"));
+      setCurrentLanguage(langCode);
+      localStorage.setItem("preferredLanguage", langCode);
     }
-  }
+  };
 
   useEffect(() => {
     // Google Translate Init
@@ -38,42 +29,42 @@ const Navbar = () => {
             pageLanguage: "en",
             autoDisplay: false,
           },
-          "google_translate_element",
-        )
+          "google_translate_element"
+        );
       }
-    }
+    };
 
     const addTranslateScript = () => {
       if (!document.querySelector("#google-translate-script")) {
-        const script = document.createElement("script")
-        script.id = "google-translate-script"
-        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        script.async = true
-        document.body.appendChild(script)
+        const script = document.createElement("script");
+        script.id = "google-translate-script";
+        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        document.body.appendChild(script);
       }
-    }
+    };
 
-    addTranslateScript()
+    addTranslateScript();
 
-    const savedLang = localStorage.getItem("preferredLanguage")
+    const savedLang = localStorage.getItem("preferredLanguage");
     if (savedLang) {
-      setCurrentLanguage(savedLang)
-      setTimeout(() => handleTranslate(savedLang), 1000)
+      setCurrentLanguage(savedLang);
+      setTimeout(() => handleTranslate(savedLang), 1000);
     }
-  }, [])
+  }, []);
 
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const target = event.target
+      const target = event.target;
       if (isMobileMenuOpen && !target.closest(".mobile-menu-container")) {
-        setIsMobileMenuOpen(false)
+        setIsMobileMenuOpen(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [isMobileMenuOpen])
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -84,20 +75,19 @@ const Navbar = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="flex items-center justify-between h-20 md:h-24 lg:h-28 px-4 sm:px-6 lg:px-8">
             {/* Logo */}
-            <a href="/" className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wider font-cinzel ">
                 JyotirPath
               </h1>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10 font-medium text-sm xl:text-base">
-              {/* HOME */}
-              <a href="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+              <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
                 HOME
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C89B6D] group-hover:w-full transition-all duration-300 ease-out" />
-              </a>
+              </Link>
 
               {/* SERVICES Dropdown */}
               <div className="relative group">
@@ -106,24 +96,24 @@ const Navbar = () => {
                   SERVICES
                 </button>
                 <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
-                  <a
-                    href="/service/astrology"
+                  <Link
+                    to="/service/astrology"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Astrology
-                  </a>
-                  <a
-                    href="/service/palmistry"
+                  </Link>
+                  <Link
+                    to="/service/palmistry"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Palmistry
-                  </a>
-                  <a
-                    href="/service/numerology"
+                  </Link>
+                  <Link
+                    to="/service/numerology"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Numerology
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -134,36 +124,36 @@ const Navbar = () => {
                   REMEDIES
                 </button>
                 <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
-                  <a
-                    href="/remedies/marriage"
+                  <Link
+                    to="/remedies/marriage"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Marriage
-                  </a>
-                  <a
-                    href="/remedies/progency"
+                  </Link>
+                  <Link
+                    to="/remedies/progency"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Progency
-                  </a>
-                  <a
-                    href="/remedies/education"
+                  </Link>
+                  <Link
+                    to="/remedies/education"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Education
-                  </a>
-                  <a
-                    href="/remedies/career"
+                  </Link>
+                  <Link
+                    to="/remedies/career"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Career
-                  </a>
-                  <a
-                    href="/remedies/muhurat"
+                  </Link>
+                  <Link
+                    to="/remedies/muhurat"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Muhurat
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -174,30 +164,30 @@ const Navbar = () => {
                   ASTROLOGICAL
                 </button>
                 <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[180px] rounded-md">
-                  <a
-                    href="/solution/gemstone"
+                  <Link
+                    to="/solution/gemstone"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Gemstones
-                  </a>
-                  <a
-                    href="/solution/gharshanti"
+                  </Link>
+                  <Link
+                    to="/solution/gharshanti"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
                     Ghar Shanti Pooja
-                  </a>
+                  </Link>
                 </div>
               </div>
 
-              <a href="/about" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+              <Link to="/about" className="hover:text-black flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
                 ABOUT US
-              </a>
+              </Link>
 
-              <a href="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+              <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
                 CONTACT
-              </a>
+              </Link>
 
               {/* Language Toggle */}
               <div className="flex gap-2 ml-4">
@@ -242,35 +232,39 @@ const Navbar = () => {
           >
             <div className="bg-gradient-to-b from-gray-900 to-black border-t border-[#C89B6D] px-4 sm:px-6 py-6 space-y-6 text-white">
               {/* Mobile Home */}
-              <button
-                onClick={() => handleNavigate("/")}
+              <Link
+                to="/"
+                onClick={toggleMobileMenu}
                 className="block w-full text-left py-2 text-lg font-medium hover:text-[#C89B6D] transition-colors duration-200"
               >
                 HOME
-              </button>
+              </Link>
 
               {/* Mobile Services */}
               <div className="space-y-3">
                 <div className="text-[#C89B6D] font-semibold text-lg border-b border-[#C89B6D] pb-2">SERVICES</div>
                 <div className="pl-4 space-y-2">
-                  <button
-                    onClick={() => handleNavigate("/service/astrology")}
+                  <Link
+                    to="/service/astrology"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Astrology
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/service/palmistry")}
+                  </Link>
+                  <Link
+                    to="/service/palmistry"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Palmistry
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/service/numerology")}
+                  </Link>
+                  <Link
+                    to="/service/numerology"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Numerology
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -278,36 +272,41 @@ const Navbar = () => {
               <div className="space-y-3">
                 <div className="text-[#C89B6D] font-semibold text-lg border-b border-[#C89B6D] pb-2">REMEDIES</div>
                 <div className="pl-4 space-y-2">
-                  <button
-                    onClick={() => handleNavigate("/remedies/marriage")}
+                  <Link
+                    to="/remedies/marriage"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Marriage
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/remedies/progency")}
+                  </Link>
+                  <Link
+                    to="/remedies/progency"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Progency
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/remedies/education")}
+                  </Link>
+                  <Link
+                    to="/remedies/education"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Education
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/remedies/career")}
+                  </Link>
+                  <Link
+                    to="/remedies/career"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Career
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/remedies/muhurat")}
+                  </Link>
+                  <Link
+                    to="/remedies/muhurat"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Muhurat
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -315,34 +314,38 @@ const Navbar = () => {
               <div className="space-y-3">
                 <div className="text-[#C89B6D] font-semibold text-lg border-b border-[#C89B6D] pb-2">ASTROLOGICAL</div>
                 <div className="pl-4 space-y-2">
-                  <button
-                    onClick={() => handleNavigate("/solution/gemstone")}
+                  <Link
+                    to="/solution/gemstone"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Gemstones
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("/solution/gharshanti")}
+                  </Link>
+                  <Link
+                    to="/solution/gharshanti"
+                    onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
                     Ghar Shanti Pooja
-                  </button>
+                  </Link>
                 </div>
               </div>
 
               {/* Mobile About & Contact */}
-              <button
-                onClick={() => handleNavigate("/about")}
+              <Link
+                to="/about"
+                onClick={toggleMobileMenu}
                 className="block w-full text-left py-2 text-lg font-medium hover:text-[#C89B6D] transition-colors duration-200"
               >
                 ABOUT US
-              </button>
-              <button
-                onClick={() => handleNavigate("/contact")}
+              </Link>
+              <Link
+                to="/contact"
+                onClick={toggleMobileMenu}
                 className="block w-full text-left py-2 text-lg font-medium hover:text-[#C89B6D] transition-colors duration-200"
               >
                 CONTACT
-              </button>
+              </Link>
 
               {/* Mobile Language Buttons */}
               <div className="flex gap-3 pt-4 border-t border-gray-700">
@@ -372,7 +375,7 @@ const Navbar = () => {
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
