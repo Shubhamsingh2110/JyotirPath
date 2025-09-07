@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20 md:h-24 lg:h-28 px-4 sm:px-6 lg:px-8">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wider font-cinzel ">
+              <h1 className="text-xl sm:text-xl md:text-3xl lg:text-3xl font-light tracking-wider font-cinzel ">
                 Devjanya Jyotish
               </h1>
             </Link>
