@@ -77,7 +77,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wider font-cinzel ">
-                JyotirPath
+                Devjanya Jyotish
               </h1>
             </Link>
 
