@@ -1,29 +1,29 @@
 import React from 'react'
 
 const Section5 = () => {
-  const testimonials = [
-    {
-      name: "Aiyana Sharma",
-      role: "Singer",
-      image: "https://i.pinimg.com/736x/3f/f5/1c/3ff51c5a29586ab8a0dfc72d57fea179.jpg",
-      message:
-        "I was at a crossroads in my career and deeply confused. The astrology session helped me uncover patterns and guided me toward the right decisions.",
-    },
-    {
-      name: "Judith Kapoor",
-      role: "Dancer",
-      image: "https://i.pinimg.com/736x/c4/e7/10/c4e7107f4b231612707e4231c5c3d9cf.jpg",
-      message:
-        "Numerology gave me a fresh perspective on my life path. I never realized how numbers could align so closely with my experiences.",
-    },
-    {
-      name: "Sara Desai",
-      role: "Creative Director",
-      image: "https://i.pinimg.com/736x/a3/ae/ac/a3aeac1628cd4e9b4ead5dc43864e813.jpg",
-      message:
-        "I was skeptical at first, but the consultation revealed so much about my personality and challenges. Truly transformative.",
-    },
-  ]
+const testimonials = [
+  {
+    name: "Aishwarya Nair",
+    role: "Singer",
+    image: "https://i.pinimg.com/736x/08/ed/52/08ed520d803c7a386128bbc0c9070500.jpg",
+    message:
+      "I was at a turning point in my career and felt quite uncertain. The astrology session gave me clarity and direction, helping me make the right choices with confidence.",
+  },
+  {
+    name: "Ritika Mehra",
+    role: "Classical Dancer",
+    image: "https://i.pinimg.com/736x/42/a9/26/42a926ee907ca29cdb5dc8c7bfdf6582.jpg",
+    message:
+      "Numerology opened a new perspective for me. I never thought numbers could connect so deeply with my journey, but it truly reflected my life path.",
+  },
+  {
+    name: "Sneha Kulkarni",
+    role: "Creative Director",
+    image: "https://i.pinimg.com/736x/a3/ae/ac/a3aeac1628cd4e9b4ead5dc43864e813.jpg",
+    message:
+      "At first, I was a little doubtful, but the consultation explained so much about my nature, strengths, and challenges. It felt very personal and meaningful.",
+  },
+]
 
   return (
     <div className="w-full bg-stone-100 border-t-[0.2px] border-b-[0.2px] border-[#C89B6D]">

@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10 font-medium text-sm xl:text-base">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-7 font-medium text-sm xl:text-base">
               <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
                 HOME
@@ -134,7 +134,7 @@ const Navbar = () => {
                     to="/remedies/progency"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
-                    Progency
+                    Progeny
                   </Link>
                   <Link
                     to="/remedies/education"
@@ -168,7 +168,7 @@ const Navbar = () => {
                     to="/solution/gemstone"
                     className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                   >
-                    Gemstones
+                    Gemstones/Rudraksh
                   </Link>
                   <Link
                     to="/solution/gharshanti"
@@ -284,7 +284,7 @@ const Navbar = () => {
                     onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
-                    Progency
+                    Progeny
                   </Link>
                   <Link
                     to="/remedies/education"
@@ -319,7 +319,7 @@ const Navbar = () => {
                     onClick={toggleMobileMenu}
                     className="block w-full text-left py-2 hover:text-[#C89B6D] hover:translate-x-2 transition-all duration-200"
                   >
-                    Gemstones
+                    Gemstones/Rudraksh
                   </Link>
                   <Link
                     to="/solution/gharshanti"
