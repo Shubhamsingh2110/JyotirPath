@@ -1,18 +1,18 @@
 import { Link } from "react-router";
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Header() {
-  const [currentLanguage, setCurrentLanguage] = useState("en")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleTranslate = (language) => {
-    setCurrentLanguage(language)
+    setCurrentLanguage(language);
     // Add translation logic here
-  }
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <header className="bg-white text-black border-b border-stone-200 sticky top-0 z-40 shadow-sm">
@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28 px-4 sm:px-6 lg:px-8">
           {/* Left Navigation - 3 items */}
           <nav className="hidden xl:flex items-center space-x-4 2xl:space-x-7 font-medium text-xs lg:text-sm xl:text-base">
-            <Link href="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+            <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C89B6D] group-hover:w-full transition-all duration-300 ease-out" />
@@ -34,19 +34,19 @@ export default function Header() {
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
                 <Link
-                  href="/service/astrology"
+                  to="/service/astrology"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Astrology
                 </Link>
                 <Link
-                  href="/service/palmistry"
+                  to="/service/palmistry"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Palmistry
                 </Link>
                 <Link
-                  href="/service/numerology"
+                  to="/service/numerology"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Numerology
@@ -63,31 +63,31 @@ export default function Header() {
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
                 <Link
-                  href="/remedies/marriage"
+                  to="/remedies/marriage"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Marriage
                 </Link>
                 <Link
-                  href="/remedies/progency"
+                  to="/remedies/progency"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Progeny
                 </Link>
                 <Link
-                  href="/remedies/education"
+                  to="/remedies/education"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Education
                 </Link>
                 <Link
-                  href="/remedies/career"
+                  to="/remedies/career"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Career
                 </Link>
                 <Link
-                  href="/remedies/muhurat"
+                  to="/remedies/muhurat"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Muhurat
@@ -97,25 +97,25 @@ export default function Header() {
           </nav>
 
           <nav className="hidden lg:flex xl:hidden items-center space-x-3 font-medium text-xs">
-            <Link href="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+            <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D]">✦</span>
               HOME
             </Link>
             <Link
-              href="/services"
+              to="/services"
               className="hover:text-black flex items-center gap-1 group relative transition-colors"
             >
               <span className="text-[#C89B6D]">✦</span>
               SERVICES
             </Link>
-            <Link href="/about" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+            <Link to="/about" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D]">✦</span>
               ABOUT
             </Link>
           </nav>
 
           {/* Logo - Centered */}
-          <Link href="/" className="flex-shrink-0 mx-4 lg:mx-0">
+          <Link to="/" className="flex-shrink-0 mx-4 lg:mx-0">
             <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-light tracking-wider font-serif text-center">
               <span className="block sm:hidden">Devjanya</span>
               <span className="hidden sm:block">Devjanya Jyotish</span>
@@ -133,13 +133,13 @@ export default function Header() {
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[180px] rounded-md right-0">
                 <Link
-                  href="/solution/gemstone"
+                  to="/solution/gemstone"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Gemstones/Rudraksh
                 </Link>
                 <Link
-                  href="/solution/gharshanti"
+                  to="/solution/gharshanti"
                   className="block hover:text-[#C89B6D] py-2 hover:translate-x-2 transition-all duration-200"
                 >
                   Grah Shanti pooja
@@ -148,14 +148,14 @@ export default function Header() {
             </div>
 
             <Link
-              href="/about"
+              to="/about"
               className="hover:text-black text-xs lg:text-sm flex items-center gap-1 group relative transition-colors"
             >
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               ABOUT US
             </Link>
 
-            <Link href="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+            <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               CONTACT
             </Link>
@@ -163,13 +163,13 @@ export default function Header() {
 
           <nav className="hidden lg:flex xl:hidden items-center space-x-3 font-medium text-xs">
             <Link
-              href="/solutions"
+              to="/solutions"
               className="hover:text-black flex items-center gap-1 group relative transition-colors"
             >
               <span className="text-[#C89B6D]">✦</span>
               SOLUTIONS
             </Link>
-            <Link href="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
+            <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D]">✦</span>
               CONTACT
             </Link>
@@ -221,7 +221,7 @@ export default function Header() {
           <div className="lg:hidden bg-white border-t border-stone-200 shadow-lg">
             <nav className="px-4 py-4 space-y-3 max-h-[80vh] overflow-y-auto">
               <Link
-                href="/"
+                to="/"
                 className="block py-3 text-base font-medium hover:text-[#C89B6D] transition-colors border-b border-stone-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -235,21 +235,21 @@ export default function Header() {
                 </div>
                 <div className="pl-6 space-y-2">
                   <Link
-                    href="/service/astrology"
+                    to="/service/astrology"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Astrology
                   </Link>
                   <Link
-                    href="/service/palmistry"
+                    to="/service/palmistry"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Palmistry
                   </Link>
                   <Link
-                    href="/service/numerology"
+                    to="/service/numerology"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -265,35 +265,35 @@ export default function Header() {
                 </div>
                 <div className="pl-6 space-y-2">
                   <Link
-                    href="/remedies/marriage"
+                    to="/remedies/marriage"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Marriage
                   </Link>
                   <Link
-                    href="/remedies/progency"
+                    to="/remedies/progency"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Progeny
                   </Link>
                   <Link
-                    href="/remedies/education"
+                    to="/remedies/education"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Education
                   </Link>
                   <Link
-                    href="/remedies/career"
+                    to="/remedies/career"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Career
                   </Link>
                   <Link
-                    href="/remedies/muhurat"
+                    to="/remedies/muhurat"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -309,14 +309,14 @@ export default function Header() {
                 </div>
                 <div className="pl-6 space-y-2">
                   <Link
-                    href="/solution/gemstone"
+                    to="/solution/gemstone"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Gemstones/Rudraksh
                   </Link>
                   <Link
-                    href="/solution/gharshanti"
+                    to="/solution/gharshanti"
                     className="block py-2 text-sm text-gray-600 hover:text-[#C89B6D] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -326,7 +326,7 @@ export default function Header() {
               </div>
 
               <Link
-                href="/about"
+                to="/about"
                 className="block py-3 text-base font-medium hover:text-[#C89B6D] transition-colors border-b border-stone-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -334,7 +334,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/contact"
+                to="/contact"
                 className="block py-3 text-base font-medium hover:text-[#C89B6D] transition-colors border-b border-stone-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -369,5 +369,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
