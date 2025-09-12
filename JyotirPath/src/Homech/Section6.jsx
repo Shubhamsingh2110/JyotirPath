@@ -5,7 +5,7 @@ const SimpleGrid = () => {
       alt: "The Moon tarot card XVIII on round stone with marble background",
     },
     {
-      src: "https://i.pinimg.com/736x/a0/bf/a1/a0bfa16a5a65738d974b7c0de8164797.jpg",
+      src: "https://i.pinimg.com/1200x/fe/93/ed/fe93ed6b1baef2067b9f2ce300f08997.jpg",
       alt: "Scattered tarot deck with natal chart and gemstones",
     },
     {
@@ -33,12 +33,12 @@ const SimpleGrid = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2"
+              className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2"
             >
               <img
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
-                className="w-full h-64 md:h-72 lg:h-96 object-cover object-center rounded-3xl"
+                className="w-full h-64 md:h-72 lg:h-[500px] object-cover object-center rounded-3xl"
               />
             </div>
           ))}
