@@ -11,8 +11,8 @@ const Section1 = () => {
           <div className="text-center mb-8">
             <h1 className="text-4xl sm:text-5xl font-serif text-gray-900">The Secrets</h1>
             <div className="flex items-baseline justify-center gap-2 mt-2">
-              <span className="text-4xl sm:text-5xl font-serif text-gray-900">of</span>
-              <span className="text-4xl sm:text-5xl font-serif italic text-gray-900">the Cosmos</span>
+              <span className="text-4xl sm:text-5xl font-serif text-gray-900 ">of</span>
+              <span className="text-4xl sm:text-5xl font-serif italic text-gray-900 ">the Cosmos</span>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const Section1 = () => {
               The Secrets
             </h1>
             <div className="flex items-baseline gap-2 mt-2">
-              <span className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif text-gray-900">of </span>
+              <span className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif text-gray-900 mr-7">of </span>
               <span className="text-5xl lg:text-7xl xl:text-9xl 2xl:text-9xl font-serif italic text-gray-900">
                 the Co<span className='text-white'>smos</span>
               </span>

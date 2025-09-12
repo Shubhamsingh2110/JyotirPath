@@ -1,25 +1,53 @@
 import { Link } from "react-router";
-import { useState } from "react";
+import { useState } from "react"
 
 export default function Header() {
-  const [currentLanguage, setCurrentLanguage] = useState("en");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en")
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleTranslate = (language) => {
-    setCurrentLanguage(language);
+    setCurrentLanguage(language)
     // Add translation logic here
-  };
+  }
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <header className="bg-white text-black border-b border-stone-200 sticky top-0 z-40 shadow-sm">
-      <div className="container mx-auto max-w-7xl">
-        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28 px-4 sm:px-6 lg:px-8">
-          {/* Left Navigation - 3 items */}
-          <nav className="hidden xl:flex items-center space-x-4 2xl:space-x-7 font-medium text-xs lg:text-sm xl:text-base">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Logo Section - Centered at top */}
+        <div className="flex items-center justify-between py-4 sm:py-6">
+          <Link to="/" className="flex-1 flex justify-center">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-light tracking-wider font-cinzel text-center">
+              <span className="block sm:hidden">Devjanya</span>
+              <span className="hidden sm:block">Devjanya Jyotish</span>
+            </h1>
+          </Link>
+
+          {/* Mobile menu button - positioned absolute to not affect logo centering */}
+          <div className="lg:hidden absolute right-4 sm:right-6">
+            <button
+              onClick={toggleMobileMenu}
+              className="p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#C89B6D] rounded-md"
+              aria-label="Toggle mobile menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Navigation Section - All items below logo */}
+        <div className="hidden lg:flex items-center justify-center pb-4">
+          <div className="flex items-center space-x-6 xl:space-x-8 font-medium text-xs lg:text-sm xl:text-base">
+            {/* HOME */}
             <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               HOME
@@ -56,10 +84,10 @@ export default function Header() {
 
             {/* REMEDIES Dropdown */}
             <div className="relative group">
-              <button className="hover:text-black text-xs lg:text-sm flex items-center gap-1 group relative transition-colors">
+              <button className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
-                <span className="hidden lg:inline">REMEDIAL SOLUTIONS</span>
-                <span className="lg:hidden">REMEDIES</span>
+                <span className="hidden xl:inline">REMEDIAL SOLUTIONS</span>
+                <span className="xl:hidden">REMEDIES</span>
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
                 <Link
@@ -94,42 +122,13 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-          </nav>
 
-          <nav className="hidden lg:flex xl:hidden items-center space-x-3 font-medium text-xs">
-            <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
-              <span className="text-[#C89B6D]">✦</span>
-              HOME
-            </Link>
-            <Link
-              to="/services"
-              className="hover:text-black flex items-center gap-1 group relative transition-colors"
-            >
-              <span className="text-[#C89B6D]">✦</span>
-              SERVICES
-            </Link>
-            <Link to="/about" className="hover:text-black flex items-center gap-1 group relative transition-colors">
-              <span className="text-[#C89B6D]">✦</span>
-              ABOUT
-            </Link>
-          </nav>
-
-          {/* Logo - Centered */}
-          <Link to="/" className="flex-shrink-0 mx-4 lg:mx-0">
-            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-light tracking-wider font-serif text-center">
-              <span className="block sm:hidden">Devjanya</span>
-              <span className="hidden sm:block">Devjanya Jyotish</span>
-            </h1>
-          </Link>
-
-          {/* Right Navigation - 3 items */}
-          <nav className="hidden xl:flex items-center space-x-4 2xl:space-x-7 font-medium text-xs lg:text-sm xl:text-base">
-            {/* ASTROLOGICAL Dropdown */}
+            {/* DAIVIYA SAHYOG Dropdown */}
             <div className="relative group">
-              <button className="hover:text-black text-xs lg:text-sm flex items-center gap-1 group relative transition-colors">
+              <button className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors">
                 <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
-                <span className="hidden lg:inline">DAIVIYA SAHYOG</span>
-                <span className="lg:hidden">SOLUTIONS</span>
+                <span className="hidden xl:inline">DAIVIYA SAHYOG</span>
+                <span className="xl:hidden">SOLUTIONS</span>
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[180px] rounded-md right-0">
                 <Link
@@ -147,76 +146,48 @@ export default function Header() {
               </div>
             </div>
 
+            {/* ABOUT US */}
             <Link
               to="/about"
-              className="hover:text-black text-xs lg:text-sm flex items-center gap-1 group relative transition-colors"
+              className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors"
             >
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               ABOUT US
             </Link>
 
+            {/* CONTACT */}
             <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
               <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
               CONTACT
             </Link>
-          </nav>
 
-          <nav className="hidden lg:flex xl:hidden items-center space-x-3 font-medium text-xs">
-            <Link
-              to="/solutions"
-              className="hover:text-black flex items-center gap-1 group relative transition-colors"
-            >
-              <span className="text-[#C89B6D]">✦</span>
-              SOLUTIONS
-            </Link>
-            <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
-              <span className="text-[#C89B6D]">✦</span>
-              CONTACT
-            </Link>
-          </nav>
-
-          {/* Language Toggle - Positioned after right nav */}
-          <div className="hidden lg:flex gap-2 ml-2 xl:ml-4">
-            <button
-              onClick={() => handleTranslate("hi")}
-              className={`px-2 xl:px-3 py-1 rounded-full text-xs xl:text-sm transition-all duration-200 ${
-                currentLanguage === "hi"
-                  ? "bg-[#C89B6D] text-white"
-                  : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
-              }`}
-            >
-              हिंदी
-            </button>
-            <button
-              onClick={() => handleTranslate("en")}
-              className={`px-2 xl:px-3 py-1 rounded-full text-xs xl:text-sm transition-all duration-200 ${
-                currentLanguage === "en"
-                  ? "bg-[#C89B6D] text-white"
-                  : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
-              }`}
-            >
-              EN
-            </button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <button
-              onClick={toggleMobileMenu}
-              className="p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#C89B6D] rounded-md"
-              aria-label="Toggle mobile menu"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+            {/* Language Toggle */}
+            <div className="flex gap-2 ml-4 xl:ml-6">
+              <button
+                onClick={() => handleTranslate("hi")}
+                className={`px-2 xl:px-3 py-1 rounded-full text-xs xl:text-sm transition-all duration-200 ${
+                  currentLanguage === "hi"
+                    ? "bg-[#C89B6D] text-white"
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                हिंदी
+              </button>
+              <button
+                onClick={() => handleTranslate("en")}
+                className={`px-2 xl:px-3 py-1 rounded-full text-xs xl:text-sm transition-all duration-200 ${
+                  currentLanguage === "en"
+                    ? "bg-[#C89B6D] text-white"
+                    : "border border-[#C89B6D] text-[#C89B6D] hover:bg-[#C89B6D] hover:text-white"
+                }`}
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
 
+        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-stone-200 shadow-lg">
             <nav className="px-4 py-4 space-y-3 max-h-[80vh] overflow-y-auto">
@@ -369,5 +340,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  );
+  )
 }

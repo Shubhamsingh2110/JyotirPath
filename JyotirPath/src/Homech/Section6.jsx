@@ -33,9 +33,9 @@ const Section6 = () => {
 
           <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2">
             <img
-              src="https://i.pinimg.com/736x/1b/10/e0/1b10e0ce4e537f7313d78b0b134c1b2f.jpg"
+              src="https://i.pinimg.com/736x/b0/03/f3/b003f3ba3a4dcfabc962baed09bba505.jpg"
               alt="Woman doing tarot card reading at spiritual table with crystals, candles, and plants"
-              className="w-full h-72 sm:h-80 object-cover rounded-xl"
+              className="w-full h-72 sm:h-80 object-cover object-top rounded-xl"
             />
           </div>
 
@@ -49,9 +49,9 @@ const Section6 = () => {
 
           <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2">
             <img
-              src="https://i.pinimg.com/736x/54/dd/3e/54dd3e9eff38faa420ea599b9904ac07.jpg"
+              src="https://i.pinimg.com/1200x/d7/9e/ee/d79eee9929b28f1bba1437fe7132ea96.jpg"
               alt="Crystals and gemstones like amethyst and green aventurine on wood with blurred nature background"
-              className="w-full h-72 sm:h-56 object-cover rounded-xl"
+              className="w-full h-72 sm:h-56 object-cover object-top rounded-xl"
             />
           </div>
         </div>
@@ -145,7 +145,7 @@ const Section6 = () => {
               <img
                 src="https://i.pinimg.com/736x/2a/6b/1e/2a6b1e8a909d0af52162ed04162d3dfa.jpg"
                 alt="Person performing pendulum chakra healing over woman lying down"
-                className="w-full h-[485px] object-cover rounded-xl"
+                className="w-full h-[405px] object-cover rounded-xl"
               />
             </div>
           </div>
@@ -154,20 +154,20 @@ const Section6 = () => {
           <div className="row-span-2">
             <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2 ">
               <img
-                src="https://i.pinimg.com/736x/1b/10/e0/1b10e0ce4e537f7313d78b0b134c1b2f.jpg"
+                src="https://i.pinimg.com/736x/b0/03/f3/b003f3ba3a4dcfabc962baed09bba505.jpg"
                 alt="Woman doing tarot card reading at spiritual table with crystals, candles, and plants"
-                className="w-full h-[490px] object-cover rounded-xl"
+                className="w-full h-[490px] object-cover object-top rounded-xl"
               />
             </div>
           </div>
 
           {/* Middle-center: Chakra stones */}
-          <div className="row-span-2 xl:-translate-y-40">
+          <div className="row-span-2 xl:-translate-y-16">
             <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2 ">
               <img
                 src="https://i.pinimg.com/736x/52/a4/ef/52a4efd117f8d24b5c6db7dd20da0e65.jpg"
                 alt="Hand placing chakra stones on drawn silhouette with singing bowl"
-                className="w-full h-96 object-cover rounded-xl object-middle"
+                className="w-full h-96 object-cover rounded-3xl object-middle"
               />
             </div>
           </div>
@@ -176,9 +176,9 @@ const Section6 = () => {
           <div className="row-span-1">
             <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2 lg:-translate-y-5">
               <img
-                src="https://i.pinimg.com/736x/54/dd/3e/54dd3e9eff38faa420ea599b9904ac07.jpg"
+                src="https://i.pinimg.com/1200x/d7/9e/ee/d79eee9929b28f1bba1437fe7132ea96.jpg"
                 alt="Crystals and gemstones like amethyst and green aventurine on wood with blurred nature background"
-                className="w-full h-56 object-cover rounded-xl"
+                className="w-full h-80 object-cover object-middle rounded-xl"
               />
             </div>
           </div>
