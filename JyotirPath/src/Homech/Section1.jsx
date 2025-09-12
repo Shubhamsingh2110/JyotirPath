@@ -11,7 +11,7 @@ const Section1 = () => {
           <div className="text-center mb-8">
             <h1 className="text-4xl sm:text-5xl font-serif text-gray-900">The Secrets</h1>
             <div className="flex items-baseline justify-center gap-2 mt-2">
-              <span className="text-4xl sm:text-5xl font-serif text-gray-900">of</span>
+              <span className="text-4xl sm:text-5xl font-serif text-gray-900 ml-3">of</span>
               <span className="text-4xl sm:text-5xl font-serif italic text-gray-900">the Cosmos</span>
             </div>
           </div>
