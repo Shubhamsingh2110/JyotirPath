@@ -26,7 +26,7 @@ const Section5 = () => {
               alt="Person sketching astrological chart with tarot cards"
               width={600}
               height={700}
-              className="w-full max-w-md h-64 sm:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full max-w-md h-64 sm:h-80 object-cover rounded-3xl shadow-lg"
             />
           </div>
 
@@ -108,7 +108,7 @@ const Section5 = () => {
                 alt="Astrological sketch and tarot"
                 width={600}
                 height={700}
-                className="w-full max-w-[650px] h-[500px] object-cover -translate-y-36 object-center"
+                className="w-full max-w-[650px] h-[500px] object-cover -translate-y-36 object-center rounded-3xl"
               />
             </div>
             {/* Services Section */}
@@ -185,7 +185,7 @@ const Section5 = () => {
                     alt="Hand holding tarot cards"
                     width={128}
                     height={128}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-3xl"
                   />
                 </div>
                 <div className="absolute -right-[335px] -top-36 transform -translate-y-1/2 -rotate-90">
@@ -200,7 +200,7 @@ const Section5 = () => {
                 alt="Woman doing tarot reading with candles and crystals"
                 width={300}
                 height={200}
-                className="h-[550px] w-[600px] object-cover"
+                className="h-[550px] w-[600px] object-cover rounded-3xl"
               />
             </div>
           </div>
