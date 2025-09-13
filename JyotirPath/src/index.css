@@ -4,3 +4,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Hide Google Translate top banner completely */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Hide Google Translate popup tooltip */
+.goog-tooltip,
+.goog-tooltip div,
+.goog-text-highlight {
+  display: none !important;
+}

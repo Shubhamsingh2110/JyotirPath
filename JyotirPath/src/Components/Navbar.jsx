@@ -1,23 +1,47 @@
 import { Link } from "react-router";
-import { useState } from "react"
+import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [currentLanguage, setCurrentLanguage] = useState("en")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleTranslate = (language) => {
-    setCurrentLanguage(language)
-    // Add translation logic here
-  }
+    setCurrentLanguage(language);
+
+    // ✅ Trigger Google Translate language change
+    const selectEl = document.querySelector(".goog-te-combo");
+    if (selectEl) {
+      selectEl.value = language;
+      selectEl.dispatchEvent(new Event("change"));
+    }
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    document.body.appendChild(script);
+
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,hi",
+          autoDisplay: false,
+        },
+        "google_translate_element"
+      );
+    };
+  }, []);
 
   return (
     <header className="bg-white text-black border-b border-stone-200 sticky top-0 z-40 shadow-sm">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Logo Section - Centered at top */}
+        {/* Logo Section */}
         <div className="flex items-center justify-between py-4 sm:py-6">
           <Link to="/" className="flex-1 flex justify-center">
             <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-light tracking-wider font-cinzel text-center">
@@ -26,30 +50,50 @@ export default function Header() {
             </h1>
           </Link>
 
-          {/* Mobile menu button - positioned absolute to not affect logo centering */}
+          {/* Mobile menu button */}
           <div className="lg:hidden absolute right-4 sm:right-6">
             <button
               onClick={toggleMobileMenu}
               className="p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#C89B6D] rounded-md"
               aria-label="Toggle mobile menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
           </div>
         </div>
 
-        {/* Navigation Section - All items below logo */}
+        {/* Navigation Section (Desktop) */}
         <div className="hidden lg:flex items-center justify-center pb-4">
           <div className="flex items-center space-x-6 xl:space-x-8 font-medium text-xs lg:text-sm xl:text-base">
             {/* HOME */}
-            <Link to="/" className="hover:text-black flex items-center gap-1 group relative transition-colors">
-              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+            <Link
+              to="/"
+              className="hover:text-black flex items-center gap-1 group relative transition-colors"
+            >
+              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                ✦
+              </span>
               HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C89B6D] group-hover:w-full transition-all duration-300 ease-out" />
             </Link>
@@ -57,7 +101,9 @@ export default function Header() {
             {/* SERVICES Dropdown */}
             <div className="relative group">
               <button className="hover:text-black flex items-center gap-1 group relative transition-colors">
-                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                  ✦
+                </span>
                 SERVICES
               </button>
               <div className="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out bg-white border border-[#C89B6D] mt-2 py-3 px-4 space-y-2 shadow-xl z-50 min-w-[160px] rounded-md">
@@ -82,10 +128,12 @@ export default function Header() {
               </div>
             </div>
 
-            {/* REMEDIES Dropdown */}
+            {/* REMEDIAL SOLUTIONS Dropdown */}
             <div className="relative group">
               <button className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors">
-                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                  ✦
+                </span>
                 <span className="hidden xl:inline">REMEDIAL SOLUTIONS</span>
                 <span className="xl:hidden">REMEDIES</span>
               </button>
@@ -126,7 +174,9 @@ export default function Header() {
             {/* DAIVIYA SAHYOG Dropdown */}
             <div className="relative group">
               <button className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors">
-                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+                <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                  ✦
+                </span>
                 <span className="hidden xl:inline">DAIVIYA SAHYOG</span>
                 <span className="xl:hidden">SOLUTIONS</span>
               </button>
@@ -151,17 +201,24 @@ export default function Header() {
               to="/about"
               className="hover:text-black text-xs lg:text-base flex items-center gap-1 group relative transition-colors"
             >
-              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                ✦
+              </span>
               ABOUT US
             </Link>
 
             {/* CONTACT */}
-            <Link to="/contact" className="hover:text-black flex items-center gap-1 group relative transition-colors">
-              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">✦</span>
+            <Link
+              to="/contact"
+              className="hover:text-black flex items-center gap-1 group relative transition-colors"
+            >
+              <span className="text-[#C89B6D] group-hover:rotate-180 transition-transform duration-300">
+                ✦
+              </span>
               CONTACT
             </Link>
 
-            {/* Language Toggle */}
+            {/* Language Toggle (Desktop) */}
             <div className="flex gap-2 ml-4 xl:ml-6">
               <button
                 onClick={() => handleTranslate("hi")}
@@ -191,6 +248,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-stone-200 shadow-lg">
             <nav className="px-4 py-4 space-y-3 max-h-[80vh] overflow-y-auto">
+              {/* Mobile nav links here ... */}
               <Link
                 to="/"
                 className="block py-3 text-base font-medium hover:text-[#C89B6D] transition-colors border-b border-stone-100"
@@ -311,8 +369,7 @@ export default function Header() {
               >
                 CONTACT
               </Link>
-
-              {/* Language Toggle for Mobile */}
+              {/* Language Toggle (Mobile) */}
               <div className="flex gap-3 pt-4">
                 <button
                   onClick={() => handleTranslate("hi")}
@@ -339,6 +396,9 @@ export default function Header() {
           </div>
         )}
       </div>
+
+      {/* Hidden Google Translate dropdown (needed for switching) */}
+      <div id="google_translate_element" className="hidden"></div>
     </header>
-  )
+  );
 }
