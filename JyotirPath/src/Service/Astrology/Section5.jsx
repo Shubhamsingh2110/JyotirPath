@@ -4,8 +4,8 @@ const Section5 = () => {
 const testimonials = [
   {
     name: "Aishwarya Nair",
-    role: "Farmer",
-    image: "https://i.pinimg.com/736x/08/ed/52/08ed520d803c7a386128bbc0c9070500.jpg",
+    role: "Business man",
+    image: "https://i.pinimg.com/736x/2b/4a/0b/2b4a0b51b6b1d5a0d51edadfe685a7b3.jpg",
     message:
       "I was at a turning point in my career and felt quite uncertain. The astrology session gave me clarity and direction, helping me make the right choices with confidence.",
   },
