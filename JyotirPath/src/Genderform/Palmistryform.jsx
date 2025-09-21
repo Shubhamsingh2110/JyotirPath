@@ -23,7 +23,7 @@ export default function Component() {
     setIsSubmitting(true)
 
     // WhatsApp Number (without +, use country code)
-    const phoneNumber = "917498487413" // 🔁 Replace with your number
+    const phoneNumber = "918889641452" // 🔁 Replace with your number
 
     // Message to send
     const message = `Hello! My name is ${formData.fullName}. I would like to inquire about the "${formData.service}" service. My contact number is ${formData.phone}.`
