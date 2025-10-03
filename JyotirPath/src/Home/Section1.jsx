@@ -34,7 +34,7 @@ const Section1 = () => {
         {stars.map((star) => (
         <div
           key={star.id}
-          className="absolute rounded-full bg-white animate-pulse"
+          className="absolute rounded-full bg-black animate-pulse"
           style={{
             left: `${star.x}%`,
             top: `${star.y}%`,
