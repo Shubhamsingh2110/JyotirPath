@@ -27,7 +27,7 @@ const Section1 = () => {
   }, [])
 
   return (
-    <section className="relative w-full bg-black overflow-hidden flex flex-col items-center justify-center px-4 py-16">
+    <section className="relative w-full bg-white overflow-hidden flex flex-col items-center justify-center px-4 py-16">
       {/* Starry Background */}
       <div className="absolute inset-0 w-full h-full">
         {/* Generate scattered stars */}
