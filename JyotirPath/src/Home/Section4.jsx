@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section4 = () => {
   return (
-    <section className="w-full bg-black relative overflow-hidden border-b-[0.5px] border-[#C89B6D]">
+    <section className="w-full bg-white relative overflow-hidden border-b-[0.5px] border-[#C89B6D]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
           {/* Left Column - Content */}
