@@ -149,11 +149,11 @@ const Contact = () => {
     <div className="min-h-screen bg-white border-t-[0.2px] relative overflow-hidden flex items-center justify-center p-4 border-b-[0.2px] border-[#C89B6D]">
       <div className="w-full max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-light text-[#C89B6D] font-serif tracking-wider leading-tight">
+          {/* <h1 className="text-4xl md:text-5xl font-light text-[#C89B6D] font-serif tracking-wider leading-tight">
             RECEIVE YOUR FREE
             <br />
             BIRTH CHART GUIDE
-          </h1>
+          </h1> */}
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-9">
