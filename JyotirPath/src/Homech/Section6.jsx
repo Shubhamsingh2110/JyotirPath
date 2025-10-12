@@ -1,17 +1,17 @@
 const SimpleGrid = () => {
   const images = [
-    {
-      src: "https://i.pinimg.com/736x/09/07/11/090711f285451ec7db392675b47bc9ee.jpg",
-      alt: "The Moon tarot card XVIII on round stone with marble background",
-    },
-    {
-      src: "https://i.pinimg.com/1200x/fe/93/ed/fe93ed6b1baef2067b9f2ce300f08997.jpg",
-      alt: "Scattered tarot deck with natal chart and gemstones",
-    },
-    {
-      src: "https://i.pinimg.com/736x/2a/6b/1e/2a6b1e8a909d0af52162ed04162d3dfa.jpg",
-      alt: "Person performing pendulum chakra healing over woman lying down",
-    },
+    // {
+    //   src: "https://i.pinimg.com/736x/09/07/11/090711f285451ec7db392675b47bc9ee.jpg",
+    //   alt: "The Moon tarot card XVIII on round stone with marble background",
+    // },
+    // {
+    //   src: "https://i.pinimg.com/1200x/fe/93/ed/fe93ed6b1baef2067b9f2ce300f08997.jpg",
+    //   alt: "Scattered tarot deck with natal chart and gemstones",
+    // },
+    // {
+    //   src: "https://i.pinimg.com/736x/2a/6b/1e/2a6b1e8a909d0af52162ed04162d3dfa.jpg",
+    //   alt: "Person performing pendulum chakra healing over woman lying down",
+    // },
     {
       src: "https://i.pinimg.com/1200x/6d/a0/88/6da0887c8703b94ce6b6158226692b68.jpg",
       alt: "Woman doing tarot card reading at spiritual table with crystals, candles, and plants",
